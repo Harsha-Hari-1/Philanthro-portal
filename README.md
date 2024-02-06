@@ -1,7 +1,7 @@
 # Philanthro-portal
 Philanthro Portal(Online Charity Management System) is a dynamic web- based application  designed to create a seamless and engaging platform for charitable organizations, donors, and beneficiaries.
 
-Key Features
+Key Features:->
 User Registration: Donors can easily register on the platform, creating personalized accounts for secure and convenient interactions.
 Home Page Display: Prominently features registered charitable organizations categorized by their focus areas for intuitive navigation.
 Donation Processes: Seamless online donation processes with secure transactions and transparent reporting on fund utilization.
@@ -13,7 +13,7 @@ Transparency and Impact: Charitable organizations can showcase their impact with
 Funding for New Technology (Bootstrapping): Allocates funds for continuous improvement and adoption of new technologies.
 Administrator's Share: Administrators have access to a dedicated share from bootstrapping campaigns.
 
-Technologies Used
+Technologies Used:
 HTML
 CSS
 JavaScript
@@ -21,23 +21,23 @@ Bootstrap
 VB.NET
 SQL Server
 
-Applications
+Applications:
 NGOs
 Government Organizations
 NPO Companies
 Crowd funding Sites
 Social Causes
 
-Advantages
+Advantages:
 Easy Donation Finding
 Automatic Payment Processing
 Helps the Needy
 
-How to Use
+How to Use:
 Clone the repository.
 Set up the necessary environment for .NET development.
 Configure the SQL Server database.
 Run the application locally or deploy it to a web server.
 
-Contributors
+Contributor:
 Harsha Hari
