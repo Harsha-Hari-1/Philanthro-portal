@@ -24,31 +24,49 @@ Funding for New Technology (Bootstrapping): Allocates funds for continuous impro
 Administrator's Share: Administrators have access to a dedicated share from bootstrapping campaigns.
 
 Technologies Used:
+
 HTML
 
 CSS
+
 JavaScript
+
 Bootstrap
+
 VB.NET
+
 SQL Server
 
 Applications:
+
 NGOs
+
 Government Organizations
+
 NPO Companies
+
 Crowd funding Sites
+
 Social Causes
 
 Advantages:
+
 Easy Donation Finding
+
 Automatic Payment Processing
+
 Helps the Needy
 
 How to Use:
+
 Clone the repository.
+
 Set up the necessary environment for .NET development.
+
 Configure the SQL Server database.
+
 Run the application locally or deploy it to a web server.
 
 Contributor:
+
 Harsha Hari
