@@ -1,0 +1,54 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Site1.master.vb" Inherits="PhilanthroPortal.Site1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+         <asp:Menu ID="Menu2" runat="server" Orientation="Horizontal">
+                <Items>
+                    <asp:MenuItem Text="Home" Value="Home">
+                    </asp:MenuItem>
+                    <asp:MenuItem Text="About" Value="About"></asp:MenuItem>
+                    <asp:MenuItem Text="Company" Value="Contact Us"></asp:MenuItem>
+                    <asp:MenuItem Text="Register" Value="Register">
+                        <asp:MenuItem Text="Donar" Value="Donar"></asp:MenuItem>
+                        <asp:MenuItem Text="Organization" Value="Organization"></asp:MenuItem>
+                        <asp:MenuItem Text="Individual" Value="Individual"></asp:MenuItem>
+                        <asp:MenuItem Text="Company" Value="New Item"></asp:MenuItem>
+                    </asp:MenuItem>
+                    <asp:MenuItem Text="Donate" Value="Donate">
+                        <asp:MenuItem Text="Donate to Organization" Value="Donate to Organization"></asp:MenuItem>
+                        <asp:MenuItem Text="Donate to Company" Value="Donate to Company"></asp:MenuItem>
+                        <asp:MenuItem Text="Donate to Individual" Value="Donate to Individual"></asp:MenuItem>
+                    </asp:MenuItem>
+                    <asp:MenuItem Text="Analysis" Value="Analysis">
+                        <asp:MenuItem Text="Fund Analysis" Value="Fund Analysis"></asp:MenuItem>
+                        <asp:MenuItem Text="Monthly Analysis" Value="Monthly Analysis"></asp:MenuItem>
+                    </asp:MenuItem>
+                    <asp:MenuItem Text="Login" Value="Login">
+                        <asp:MenuItem Text="Forgot Password" Value="Forgot Password"></asp:MenuItem>
+                    </asp:MenuItem>
+                    <asp:MenuItem Text="State" Value="State">
+                        <asp:MenuItem Text="District" Value="District">
+                            <asp:MenuItem Text="City" Value="City"></asp:MenuItem>
+                        </asp:MenuItem>
+                    </asp:MenuItem>
+                    <asp:MenuItem Text="Share" Value="Share"></asp:MenuItem>
+                    <asp:MenuItem Text="Support" Value="Support"></asp:MenuItem>
+                    <asp:MenuItem Text="Type" Value="Type"></asp:MenuItem>
+                </Items>
+            </asp:Menu>
+        
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>

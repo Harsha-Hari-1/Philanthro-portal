@@ -1,0 +1,8 @@
+c:\users\harsh\onedrive\documents\visual studio 2012\Projects\PhilanthroPortal\PhilanthroPortal\obj\Debug\PhilanthroPortal.Resources.resources
+c:\users\harsh\onedrive\documents\visual studio 2012\Projects\PhilanthroPortal\PhilanthroPortal\obj\Debug\PhilanthroPortal.vbproj.GenerateResource.Cache
+c:\users\harsh\onedrive\documents\visual studio 2012\Projects\PhilanthroPortal\PhilanthroPortal\bin\PhilanthroPortal.dll
+c:\users\harsh\onedrive\documents\visual studio 2012\Projects\PhilanthroPortal\PhilanthroPortal\bin\PhilanthroPortal.pdb
+c:\users\harsh\onedrive\documents\visual studio 2012\Projects\PhilanthroPortal\PhilanthroPortal\bin\PhilanthroPortal.xml
+c:\users\harsh\onedrive\documents\visual studio 2012\Projects\PhilanthroPortal\PhilanthroPortal\obj\Debug\PhilanthroPortal.dll
+c:\users\harsh\onedrive\documents\visual studio 2012\Projects\PhilanthroPortal\PhilanthroPortal\obj\Debug\PhilanthroPortal.xml
+c:\users\harsh\onedrive\documents\visual studio 2012\Projects\PhilanthroPortal\PhilanthroPortal\obj\Debug\PhilanthroPortal.pdb
