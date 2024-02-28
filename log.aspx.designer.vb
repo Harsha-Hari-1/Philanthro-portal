@@ -11,68 +11,86 @@ Option Strict On
 Option Explicit On
 
 
-Partial Public Class login
+Partial Public Class log
 
     '''<summary>
-    '''RadioButton1 control.
+    '''form1 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents RadioButton1 As Global.System.Web.UI.WebControls.RadioButton
+    Protected WithEvents form1 As Global.System.Web.UI.HtmlControls.HtmlForm
 
     '''<summary>
-    '''RadioButton2 control.
+    '''rbdonar control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents RadioButton2 As Global.System.Web.UI.WebControls.RadioButton
+    Protected WithEvents rbdonar As Global.System.Web.UI.WebControls.RadioButton
 
     '''<summary>
-    '''RadioButton3 control.
+    '''rborg control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents RadioButton3 As Global.System.Web.UI.WebControls.RadioButton
+    Protected WithEvents rborg As Global.System.Web.UI.WebControls.RadioButton
 
     '''<summary>
-    '''TextBox1 control.
+    '''rbind control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents TextBox1 As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents rbind As Global.System.Web.UI.WebControls.RadioButton
 
     '''<summary>
-    '''TextBox4 control.
+    '''etext control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents TextBox4 As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents etext As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''BtnLogin control.
+    '''utxt control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents BtnLogin As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents utxt As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''LinkButton1 control.
+    '''LinkButton2 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents LinkButton1 As Global.System.Web.UI.WebControls.LinkButton
+    Protected WithEvents LinkButton2 As Global.System.Web.UI.WebControls.LinkButton
+
+    '''<summary>
+    '''btlog control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents btlog As Global.System.Web.UI.WebControls.Button
+
+    '''<summary>
+    '''lbsigup control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lbsigup As Global.System.Web.UI.WebControls.LinkButton
 End Class

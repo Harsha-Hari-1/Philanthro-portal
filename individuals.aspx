@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Site1.Master" CodeBehind="individuals.aspx.vb" Inherits="PhilanthroPortal.individuals" %>
+﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Site4.Master" CodeBehind="individuals.aspx.vb" Inherits="PhilanthroPortal.individuals" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style type="text/css">
         .auto-style1 {
@@ -23,17 +23,16 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <p>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; REGISTRATION</p>
-    <p>
-        <table style="width:100%;">
+    
+        <table style="flex-align:center;background-color:lightpink; width: 777px;" align ="center">
             <tr>
-                <td class="auto-style1">First Name</td>
+                <td class="auto-style1">&nbsp;</td>
                 <td>
-                    <asp:TextBox ID="ifname" runat="server"></asp:TextBox>
-                </td>
+                    &nbsp;</td>
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td class="auto-style2">Last Name</td>
+                <td class="auto-style2">Name</td>
                 <td class="auto-style3">
                     <asp:TextBox ID="ilname" runat="server"></asp:TextBox>
                 </td>
@@ -133,8 +132,7 @@
                     <asp:GridView ID="gvind" runat="server" AllowPaging="True" AutoGenerateColumns="False" BackColor="White" BorderColor="#999999" BorderStyle="None" BorderWidth="1px" CellPadding="3" GridLines="Vertical" PageIndex="3" PageSize="5">
                         <AlternatingRowStyle BackColor="#DCDCDC" />
                         <Columns>
-                            <asp:BoundField DataField="fname" HeaderText="First Name" />
-                            <asp:BoundField DataField="lname" HeaderText="Last Name" />
+                            <asp:BoundField DataField="iname" HeaderText=" Name" />
                             <asp:BoundField DataField="address" HeaderText="Address" />
                             <asp:BoundField DataField="pincode" HeaderText="Pincode" />
                             <asp:BoundField DataField="phn" HeaderText="Phone No" />
@@ -157,5 +155,5 @@
                 <td class="auto-style3"></td>
             </tr>
         </table>
-    </p>
+    
 </asp:Content>

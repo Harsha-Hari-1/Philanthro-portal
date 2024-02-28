@@ -82,15 +82,53 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="city.aspx" />
+    <Content Include="css\style.css" />
     <Content Include="Dist.aspx" />
     <Content Include="Donar.aspx" />
+    <Content Include="donar2.aspx" />
     <Content Include="dontoind.aspx" />
     <Content Include="dontoorg.aspx" />
     <Content Include="forgotpass.aspx" />
     <Content Include="fund.aspx" />
+    <Content Include="img\about.jpg" />
+    <Content Include="img\blog-1.jpg" />
+    <Content Include="img\blog-2.jpg" />
+    <Content Include="img\blog-3.jpg" />
+    <Content Include="img\carousel-1.jpg" />
+    <Content Include="img\carousel-2.jpg" />
+    <Content Include="img\carousel-3.jpg" />
+    <Content Include="img\causes-1.jpg" />
+    <Content Include="img\causes-2.jpg" />
+    <Content Include="img\causes-3.jpg" />
+    <Content Include="img\causes-4.jpg" />
+    <Content Include="img\contact.jpg" />
+    <Content Include="img\donate.jpg" />
+    <Content Include="img\event-1.jpg" />
+    <Content Include="img\event-2.jpg" />
+    <Content Include="img\facts.jpg" />
+    <Content Include="img\page-header.jpg" />
+    <Content Include="img\post-1.jpg" />
+    <Content Include="img\post-2.jpg" />
+    <Content Include="img\post-3.jpg" />
+    <Content Include="img\post-4.jpg" />
+    <Content Include="img\post-5.jpg" />
+    <Content Include="img\single.jpg" />
+    <Content Include="img\team-1.jpg" />
+    <Content Include="img\team-2.jpg" />
+    <Content Include="img\team-3.jpg" />
+    <Content Include="img\team-4.jpg" />
+    <Content Include="img\testimonial-1.jpg" />
+    <Content Include="img\testimonial-2.jpg" />
+    <Content Include="img\testimonial-3.jpg" />
+    <Content Include="img\testimonial-4.jpg" />
+    <Content Include="img\user.jpg" />
+    <Content Include="img\volunteer.jpg" />
+    <Content Include="ind2.aspx" />
     <Content Include="individuals.aspx" />
-    <Content Include="login.aspx" />
+    <Content Include="js\main.js" />
+    <Content Include="log.aspx" />
     <Content Include="mfund.aspx" />
+    <Content Include="org2.aspx" />
     <Content Include="organization.aspx" />
     <Content Include="Register.aspx" />
     <Content Include="State.aspx" />
@@ -121,6 +159,13 @@
       <DependentUpon>Donar.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
+    <Compile Include="donar2.aspx.designer.vb">
+      <DependentUpon>donar2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="donar2.aspx.vb">
+      <DependentUpon>donar2.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="dontoind.aspx.designer.vb">
       <DependentUpon>dontoind.aspx</DependentUpon>
     </Compile>
@@ -149,6 +194,13 @@
       <DependentUpon>fund.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
+    <Compile Include="ind2.aspx.designer.vb">
+      <DependentUpon>ind2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ind2.aspx.vb">
+      <DependentUpon>ind2.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="individuals.aspx.designer.vb">
       <DependentUpon>individuals.aspx</DependentUpon>
     </Compile>
@@ -156,12 +208,12 @@
       <DependentUpon>individuals.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
-    <Compile Include="login.aspx.designer.vb">
-      <DependentUpon>login.aspx</DependentUpon>
+    <Compile Include="log.aspx.designer.vb">
+      <DependentUpon>log.aspx</DependentUpon>
     </Compile>
-    <Compile Include="login.aspx.vb">
-      <DependentUpon>login.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
+    <Compile Include="log.aspx.vb">
+      <DependentUpon>log.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="mfund.aspx.designer.vb">
       <DependentUpon>mfund.aspx</DependentUpon>
@@ -189,6 +241,13 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="org2.aspx.designer.vb">
+      <DependentUpon>org2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="org2.aspx.vb">
+      <DependentUpon>org2.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="organization.aspx.designer.vb">
       <DependentUpon>organization.aspx</DependentUpon>
     </Compile>
@@ -208,6 +267,27 @@
     </Compile>
     <Compile Include="Site1.Master.vb">
       <DependentUpon>Site1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site2.Master.designer.vb">
+      <DependentUpon>Site2.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Site2.Master.vb">
+      <DependentUpon>Site2.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site3.Master.designer.vb">
+      <DependentUpon>Site3.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Site3.Master.vb">
+      <DependentUpon>Site3.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site4.Master.designer.vb">
+      <DependentUpon>Site4.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Site4.Master.vb">
+      <DependentUpon>Site4.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="State.aspx.designer.vb">
@@ -251,6 +331,9 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <Content Include="Site1.Master" />
+    <Content Include="Site2.Master" />
+    <Content Include="Site3.Master" />
+    <Content Include="Site4.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

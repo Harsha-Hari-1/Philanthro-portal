@@ -29,11 +29,11 @@ Public Class Donar
     
     Protected Sub BtnRegister_Click(sender As Object, e As EventArgs) Handles BtndRegister.Click
         Dim instr As String
-        instr = "Insert INTO [donar](fname,lname,address,pincode,city_id,dis_id,state_id,phn,pan_no,email,password) Values('" + dfname.Text + "','" + dlname.Text + "','" + daddress.Text + "'," + dpin.Text + " ," + ddlst.SelectedValue + "," + ddlds.SelectedValue + "," + ddlci.SelectedValue + ",'" + dphone.Text + "','" + dpan.Text + "','" + demail.Text + "','" + dpass.Text + "')"
+        instr = "Insert INTO [donar](name,address,pincode,city_id,dis_id,state_id,phn,pan_no,email,password) Values('" + dlname.Text + "','" + daddress.Text + "'," + dpin.Text + " ," + ddlst.SelectedValue + "," + ddlds.SelectedValue + "," + ddlci.SelectedValue + ",'" + dphone.Text + "','" + dpan.Text + "','" + demail.Text + "','" + dpass.Text + "')"
         Dim cmddon As SqlCommand = New SqlCommand(instr, con.connect())
         cmddon.ExecuteNonQuery()
         Response.Write("<script>alert('data saved');</script>")
-        dfname.Text = ""
+
         dlname.Text = ""
         daddress.Text = ""
         dpin.Text = ""
@@ -46,14 +46,14 @@ Public Class Donar
 
     Public Sub bindstate3()
         Dim str As String
-        str = "select state_id,name from state"
+        str = "select state_id,state from state_list"
         Dim com As SqlCommand = New SqlCommand(str, con.connect())
         Dim sqlda As SqlDataAdapter = New SqlDataAdapter(com)
         Dim dst As DataTable = New DataTable
         sqlda.Fill(dst)
         ddlst.Items.Clear()
         ddlst.Items.Add("--Select--")
-        ddlst.DataTextField = "name"
+        ddlst.DataTextField = "state"
         ddlst.DataValueField = "state_id"
         ddlst.DataSource = dst
         ddlst.DataBind()
@@ -91,7 +91,7 @@ Public Class Donar
     End Sub
     Public Sub gridbind()
         Dim strt As String
-        strt = "select fname,lname,address,pincode,phn,pan_no,email from donar"
+        strt = "select name,address,pincode,phn,pan_no,email from donar"
         Dim cmn As SqlCommand = New SqlCommand(strt, con.connect())
         Dim ad As SqlDataAdapter = New SqlDataAdapter(cmn)
         Dim dt As DataTable = New DataTable

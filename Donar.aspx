@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Site1.Master" CodeBehind="Donar.aspx.vb" Inherits="PhilanthroPortal.Donar" %>
+﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Site2.Master" CodeBehind="Donar.aspx.vb" Inherits="PhilanthroPortal.Donar" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style type="text/css">
         .auto-style1 {
@@ -23,20 +23,35 @@
             width: 600px;
             height: 29px;
         }
+    .auto-style7 {
+        width: 210px;
+        height: 32px;
+    }
+    .auto-style8 {
+        width: 600px;
+        height: 32px;
+    }
+    .auto-style9 {
+        width: 210px;
+        height: 23px;
+    }
+    .auto-style10 {
+        height: 23px;
+        width: 600px;
+    }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     &nbsp;&nbsp;&nbsp;&nbsp;
-    <table border="0" style="width: 59%;">
+    <table border="0" style="width: 59%;background-color:lightpink" align="center">
         <tr>
             <td class="auto-style2">&nbsp;</td>
             <td class="auto-style3">REGISTRATION</td>
         </tr>
         <tr>
-            <td class="auto-style2">First Name</td>
-            <td class="auto-style3">
-                <asp:TextBox ID="dfname" runat="server"></asp:TextBox>
-            </td>
+            <td class="auto-style9">&nbsp;</td>
+            <td class="auto-style10">
+                &nbsp;</td>
         </tr>
         <tr>
             <td class="auto-style1">Last Name</td>
@@ -45,8 +60,8 @@
             </td>
         </tr>
         <tr>
-            <td class="auto-style1">Address</td>
-            <td class="auto-style4">
+            <td class="auto-style7">Address</td>
+            <td class="auto-style8">
                 <asp:TextBox ID="daddress" runat="server"></asp:TextBox>
             </td>
         </tr>
@@ -109,8 +124,7 @@
                 <asp:GridView ID="gvd" runat="server" AllowPaging="True" AutoGenerateColumns="False" BackColor="White" BorderColor="#999999" BorderStyle="None" BorderWidth="1px" CellPadding="3" GridLines="Vertical" PageIndex="3" PageSize="4">
                     <AlternatingRowStyle BackColor="#DCDCDC" />
                     <Columns>
-                        <asp:BoundField DataField="fname" HeaderText="First Name" />
-                        <asp:BoundField DataField="lname" HeaderText="Last Name" />
+                        <asp:BoundField DataField="name" HeaderText="Name" />
                         <asp:BoundField DataField="address" HeaderText="Address" />
                         <asp:BoundField DataField="pincode" HeaderText="Pincode" />
                         <asp:BoundField DataField="phn" HeaderText="Phone No" />

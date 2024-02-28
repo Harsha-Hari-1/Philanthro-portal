@@ -24,11 +24,11 @@ Public Class individuals
     End Sub
     Protected Sub Button1_Click(sender As Object, e As EventArgs) Handles BtnIRegister.Click
         Dim instr As String
-        instr = "Insert INTO [individuals](fname,lname,address,pincode,state_id,dis_id,city_id,phn,pan_no,conttent,sup_id,account,email,password) Values('" + ifname.Text + "','" + ilname.Text + "','" + iaddress.Text + "'," + ipin.Text + " ," + ddst.SelectedValue + "," + ddds.SelectedValue + "," + ddci.SelectedValue + ",'" + iphone.Text + "','" + ipan.Text + "','" + icond.Text + "'," + isup.text + ",'" + iacc.Text + "','" + iemail.Text + "','" + ipass.Text + "')"
+        instr = "Insert INTO [individuals](iname,address,pincode,state_id,dis_id,city_id,phn,pan_no,conttent,sup_id,account,email,password) Values('" + ilname.Text + "','" + iaddress.Text + "'," + ipin.Text + " ," + ddst.SelectedValue + "," + ddds.SelectedValue + "," + ddci.SelectedValue + ",'" + iphone.Text + "','" + ipan.Text + "','" + icond.Text + "'," + isup.Text + ",'" + iacc.Text + "','" + iemail.Text + "','" + ipass.Text + "')"
         Dim cmddon As SqlCommand = New SqlCommand(instr, con.connect())
         cmddon.ExecuteNonQuery()
         Response.Write("<script>alert('data saved');</script>")
-        ifname.Text = ""
+
         ilname.Text = ""
         iaddress.Text = ""
         ipin.Text = ""
@@ -43,14 +43,14 @@ Public Class individuals
     End Sub
     Public Sub bindstate2()
         Dim str As String
-        str = "select state_id,name from state"
+        str = "select state_id,state from state_list"
         Dim com As SqlCommand = New SqlCommand(str, con.connect())
         Dim sqlda As SqlDataAdapter = New SqlDataAdapter(com)
         Dim dt As DataTable = New DataTable
         sqlda.Fill(dt)
         ddst.Items.Clear()
         ddst.Items.Add("--Select--")
-        ddst.DataTextField = "name"
+        ddst.DataTextField = "state"
         ddst.DataValueField = "state_id"
         ddst.DataSource = dt
         ddst.DataBind()
@@ -91,7 +91,7 @@ Public Class individuals
 
 
         Dim str As String
-        str = "select fname,lname,address,pincode,phn,pan_no,account,email,conttent from individuals"
+        str = "select iname,address,pincode,phn,pan_no,account,email,conttent from individuals"
         Dim cmd As SqlCommand = New SqlCommand(str, con.connect())
         Dim ad As SqlDataAdapter = New SqlDataAdapter(cmd)
         Dim at As DataTable = New DataTable

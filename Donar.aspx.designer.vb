@@ -14,15 +14,6 @@ Option Explicit On
 Partial Public Class Donar
 
     '''<summary>
-    '''dfname control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents dfname As Global.System.Web.UI.WebControls.TextBox
-
-    '''<summary>
     '''dlname control.
     '''</summary>
     '''<remarks>

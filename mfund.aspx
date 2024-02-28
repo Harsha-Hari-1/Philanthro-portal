@@ -9,7 +9,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <p>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Monthly Analysis</p>
-    <p>
+    
         <table style="width:100%;">
             <tr>
                 <td class="auto-style1">organization Name</td>
@@ -34,5 +34,5 @@
                 <td>&nbsp;</td>
             </tr>
         </table>
-    </p>
+    
 </asp:Content>

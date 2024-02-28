@@ -43,14 +43,14 @@ Public Class organization
     End Sub
     Public Sub bindstate()
         Dim str As String
-        str = "select state_id,name from state"
+        str = "select state_id,state from state_list"
         Dim com As SqlCommand = New SqlCommand(str, co.connect())
         Dim sqlda As SqlDataAdapter = New SqlDataAdapter(com)
         Dim ds1 As DataTable = New DataTable
         sqlda.Fill(ds1)
         ddlstate.Items.Clear()
         ddlstate.Items.Add("--Select--")
-        ddlstate.DataTextField = "name"
+        ddlstate.DataTextField = "state"
         ddlstate.DataValueField = "state_id"
         ddlstate.DataSource = ds1
         ddlstate.DataBind()
