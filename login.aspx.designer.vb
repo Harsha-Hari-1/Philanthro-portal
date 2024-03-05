@@ -11,7 +11,7 @@ Option Strict On
 Option Explicit On
 
 
-Partial Public Class log
+Partial Public Class loginsam
 
     '''<summary>
     '''form1 control.
@@ -59,31 +59,31 @@ Partial Public Class log
     Protected WithEvents etext As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''utxt control.
+    '''utext control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents utxt As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents utext As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''LinkButton2 control.
+    '''btnlog control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents LinkButton2 As Global.System.Web.UI.WebControls.LinkButton
+    Protected WithEvents btnlog As Global.System.Web.UI.WebControls.Button
 
     '''<summary>
-    '''btlog control.
+    '''lbfor control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents btlog As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents lbfor As Global.System.Web.UI.WebControls.LinkButton
 
     '''<summary>
     '''lbsigup control.

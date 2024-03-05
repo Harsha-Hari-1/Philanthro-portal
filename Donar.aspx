@@ -39,10 +39,22 @@
         height: 23px;
         width: 600px;
     }
+    /* Desktop view */
+@media (min-width: 992px) {
+    /* CSS rules for desktop view */
+}
+
+/* Mobile view */
+@media (max-width: 991px) {
+    /* CSS rules for mobile view */
+}
+
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     &nbsp;&nbsp;&nbsp;&nbsp;
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
     <table border="0" style="width: 59%;background-color:lightpink" align="center">
         <tr>
             <td class="auto-style2">&nbsp;</td>
@@ -54,7 +66,7 @@
                 &nbsp;</td>
         </tr>
         <tr>
-            <td class="auto-style1">Last Name</td>
+            <td class="auto-style1">Name</td>
             <td class="auto-style4">
                 <asp:TextBox ID="dlname" runat="server"></asp:TextBox>
             </td>
@@ -93,9 +105,9 @@
             </td>
         </tr>
         <tr>
-            <td class="auto-style1">Phone No</td>
-            <td class="auto-style4">
-                <asp:TextBox ID="dphone" runat="server"></asp:TextBox>
+            <td class="auto-style7">Phone No</td>
+            <td class="auto-style8">
+                <asp:TextBox ID="dphone" runat="server" Width="180px"></asp:TextBox>
             </td>
         </tr>
         <tr>

@@ -12,7 +12,7 @@
     
         <table style="width:100%;">
             <tr>
-                <td class="auto-style1">organization Name</td>
+                <td class="auto-style1">Organization Name</td>
                 <td>
                     <asp:DropDownList ID="ddlmfund" runat="server" Width="165px">
                     </asp:DropDownList>

@@ -126,7 +126,7 @@
     <Content Include="ind2.aspx" />
     <Content Include="individuals.aspx" />
     <Content Include="js\main.js" />
-    <Content Include="log.aspx" />
+    <Content Include="login.aspx" />
     <Content Include="mfund.aspx" />
     <Content Include="org2.aspx" />
     <Content Include="organization.aspx" />
@@ -208,12 +208,12 @@
       <DependentUpon>individuals.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
-    <Compile Include="log.aspx.designer.vb">
-      <DependentUpon>log.aspx</DependentUpon>
+    <Compile Include="login.aspx.designer.vb">
+      <DependentUpon>login.aspx</DependentUpon>
     </Compile>
-    <Compile Include="log.aspx.vb">
-      <DependentUpon>log.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
+    <Compile Include="login.aspx.vb">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="mfund.aspx.designer.vb">
       <DependentUpon>mfund.aspx</DependentUpon>
