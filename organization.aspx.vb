@@ -34,6 +34,7 @@ Public Class organization
         oemail.Text = ""
         oaddress.Text = ""
         opin.Text = ""
+       
         ongo.Text = ""
         oacc.Text = ""
         opass.Text = ""
@@ -49,7 +50,7 @@ Public Class organization
         Dim ds1 As DataTable = New DataTable
         sqlda.Fill(ds1)
         ddlstate.Items.Clear()
-        ddlstate.Items.Add("--Select--")
+
         ddlstate.DataTextField = "state"
         ddlstate.DataValueField = "state_id"
         ddlstate.DataSource = ds1
@@ -64,7 +65,7 @@ Public Class organization
         Dim ds2 As DataTable = New DataTable
         sqlda.Fill(ds2)
         ddldist.Items.Clear()
-        ddldist.Items.Add("--Select--")
+
         ddldist.DataTextField = "name"
         ddldist.DataValueField = "dis_id"
         ddldist.DataSource = ds2
@@ -79,7 +80,7 @@ Public Class organization
         Dim ds3 As DataTable = New DataTable
         sqlda.Fill(ds3)
         ddlcity.Items.Clear()
-        ddlcity.Items.Add("--Select--")
+
         ddlcity.DataTextField = "name"
         ddlcity.DataValueField = "city_id"
         ddlcity.DataSource = ds3

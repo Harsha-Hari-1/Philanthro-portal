@@ -6,7 +6,7 @@ PhilanthroPortal
 </name>
 </assembly>
 <members>
-<member name="F:PhilanthroPortal.loginsam.form1">
+<member name="F:PhilanthroPortal.neworg.form1">
 	<summary>
 form1 control.
 </summary>
@@ -14,65 +14,193 @@ form1 control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:PhilanthroPortal.loginsam.rbdonar">
+</member><member name="F:PhilanthroPortal.newdonar.form1">
 	<summary>
-rbdonar control.
+form1 control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:PhilanthroPortal.loginsam.rborg">
+</member><member name="F:PhilanthroPortal.newdonar.ScriptManager1">
 	<summary>
-rborg control.
+ScriptManager1 control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:PhilanthroPortal.loginsam.rbind">
+</member><member name="F:PhilanthroPortal.newdonar.Panel1">
 	<summary>
-rbind control.
+Panel1 control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:PhilanthroPortal.loginsam.etext">
+</member><member name="F:PhilanthroPortal.newdonar.dlname">
 	<summary>
-etext control.
+dlname control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:PhilanthroPortal.loginsam.utext">
+</member><member name="F:PhilanthroPortal.newdonar.Panel7">
 	<summary>
-utext control.
+Panel7 control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:PhilanthroPortal.loginsam.btnlog">
+</member><member name="F:PhilanthroPortal.newdonar.daddress">
 	<summary>
-btnlog control.
+daddress control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:PhilanthroPortal.loginsam.lbfor">
+</member><member name="F:PhilanthroPortal.newdonar.Panel8">
 	<summary>
-lbfor control.
+Panel8 control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:PhilanthroPortal.loginsam.lbsigup">
+</member><member name="F:PhilanthroPortal.newdonar.dpin">
 	<summary>
-lbsigup control.
+dpin control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.newdonar.Panel23">
+	<summary>
+Panel23 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.newdonar.ddlci">
+	<summary>
+ddlci control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.newdonar.Panel22">
+	<summary>
+Panel22 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.newdonar.ddlds">
+	<summary>
+ddlds control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.newdonar.Panel21">
+	<summary>
+Panel21 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.newdonar.ddlst">
+	<summary>
+ddlst control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.newdonar.Panel15">
+	<summary>
+Panel15 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.newdonar.dphone">
+	<summary>
+dphone control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.newdonar.Panel20">
+	<summary>
+Panel20 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.newdonar.dpan">
+	<summary>
+dpan control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.newdonar.Panel2">
+	<summary>
+Panel2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.newdonar.demail">
+	<summary>
+demail control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.newdonar.Panel9">
+	<summary>
+Panel9 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.newdonar.dpass">
+	<summary>
+dpass control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.newdonar.Panel16">
+	<summary>
+Panel16 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.newdonar.BtndRegister">
+	<summary>
+BtndRegister control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -257,6 +385,78 @@ To modify move field declaration from designer file to code-behind file.
 </member><member name="F:PhilanthroPortal.State.Button1">
 	<summary>
 Button1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.loginsam.form1">
+	<summary>
+form1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.loginsam.rbdonar">
+	<summary>
+rbdonar control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.loginsam.rborg">
+	<summary>
+rborg control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.loginsam.rbind">
+	<summary>
+rbind control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.loginsam.etext">
+	<summary>
+etext control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.loginsam.utext">
+	<summary>
+utext control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.loginsam.btnlog">
+	<summary>
+btnlog control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.loginsam.lbfor">
+	<summary>
+lbfor control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.loginsam.lbsigup">
+	<summary>
+lbsigup control.
 </summary>
 	<remarks>
 Auto-generated field.

@@ -51,10 +51,10 @@ Public Class loginsam
 
     Protected Sub lbsigup_Click(sender As Object, e As EventArgs) Handles lbsigup.Click
         If rbdonar.Checked = True Then
-            Response.Redirect("donar.aspx")
-        ElseIf rborg.Checked Then
+            Response.Redirect("newdonar.aspx")
+        ElseIf rborg.Checked = True Then
             Response.Redirect("organization.aspx")
-        ElseIf rborg.Checked Then
+        ElseIf rborg.Checked = True Then
             Response.Redirect("individuals.aspx")
         End If
     End Sub

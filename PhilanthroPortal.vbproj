@@ -128,6 +128,8 @@
     <Content Include="js\main.js" />
     <Content Include="login.aspx" />
     <Content Include="mfund.aspx" />
+    <Content Include="newdonar.aspx" />
+    <Content Include="neworg.aspx" />
     <Content Include="org2.aspx" />
     <Content Include="organization.aspx" />
     <Content Include="Register.aspx" />
@@ -240,6 +242,20 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="newdonar.aspx.designer.vb">
+      <DependentUpon>newdonar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="newdonar.aspx.vb">
+      <DependentUpon>newdonar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="neworg.aspx.designer.vb">
+      <DependentUpon>neworg.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="neworg.aspx.vb">
+      <DependentUpon>neworg.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="org2.aspx.designer.vb">
       <DependentUpon>org2.aspx</DependentUpon>
