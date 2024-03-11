@@ -1,14 +1,14 @@
 ﻿Imports System.Data.SqlClient
 Imports System.Data
-Public Class individuals
+Imports System.IO
+
+Public Class newind
     Inherits System.Web.UI.Page
     Dim con As philanthro = New philanthro
-
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
-        
         If Not Me.IsPostBack Then
             bindstate2()
-            
+
         End If
         If Not Me.IsPostBack Then
 
@@ -18,13 +18,11 @@ Public Class individuals
         If Not Me.IsPostBack Then
             bindcity2()
         End If
-        If Not Me.IsPostBack Then
-            grid()
-        End If
     End Sub
-    Protected Sub Button1_Click(sender As Object, e As EventArgs) Handles BtnIRegister.Click
+
+    Protected Sub BtnIRegister_Click(sender As Object, e As EventArgs) Handles BtnIRegister.Click
         Dim instr As String
-        instr = "Insert INTO [individuals](iname,address,pincode,state_id,dis_id,city_id,phn,pan_no,conttent,sup_id,account,email,password) Values('" + ilname.Text + "','" + iaddress.Text + "'," + ipin.Text + " ," + ddst.SelectedValue + "," + ddds.SelectedValue + "," + ddci.SelectedValue + ",'" + iphone.Text + "','" + ipan.Text + "','" + icond.Text + "'," + isup.Text + ",'" + iacc.Text + "','" + iemail.Text + "','" + ipass.Text + "')"
+        instr = "Insert INTO [individuals](iname,address,pincode,state_id,dis_id,city_id,phn,pan_no,conttent,account,email,password) Values('" + ilname.Text + "','" + iaddress.Text + "'," + ipin.Text + " ," + ddst.SelectedValue + "," + ddds.SelectedValue + "," + ddci.SelectedValue + ",'" + iphone.Text + "','" + ipan.Text + "','" + icond.Text + "','" + iacc.Text + "','" + iemail.Text + "','" + ipass.Text + "')"
         Dim cmddon As SqlCommand = New SqlCommand(instr, con.connect())
         cmddon.ExecuteNonQuery()
         Response.Write("<script>alert('data saved');</script>")
@@ -35,11 +33,11 @@ Public Class individuals
         iphone.Text = ""
         ipan.Text = ""
         icond.Text = ""
-        isup.Text = ""
+
         iacc.Text = ""
         iemail.Text = ""
         ipass.Text = ""
-        grid()
+        cmd.CommandText = "INSERT INTO support (reg_id) VALUES ('" + formvalue + "'); SELECT SCOPE_IDENTITY()"
     End Sub
     Public Sub bindstate2()
         Dim str As String
@@ -49,12 +47,11 @@ Public Class individuals
         Dim dt As DataTable = New DataTable
         sqlda.Fill(dt)
         ddst.Items.Clear()
-        ddst.Items.Add("--Select--")
         ddst.DataTextField = "state"
         ddst.DataValueField = "state_id"
         ddst.DataSource = dt
         ddst.DataBind()
-        
+
     End Sub
     Public Sub binddist2()
         Dim str As String
@@ -64,12 +61,12 @@ Public Class individuals
         Dim dt1 As DataTable = New DataTable
         sqlda.Fill(dt1)
         ddds.Items.Clear()
-        ddds.Items.Add("--Select--")
+
         ddds.DataTextField = "name"
         ddds.DataValueField = "dis_id"
         ddds.DataSource = dt1
         ddds.DataBind()
-        
+
     End Sub
     Public Sub bindcity2()
         Dim str As String
@@ -79,25 +76,12 @@ Public Class individuals
         Dim ds3 As DataTable = New DataTable
         sqlda.Fill(ds3)
         ddci.Items.Clear()
-        ddci.Items.Add("--Select--")
+
         ddci.DataTextField = "name"
         ddci.DataValueField = "city_id"
         ddci.DataSource = ds3
         ddci.DataBind()
 
-        
-    End Sub
-    Public Sub grid()
-
-
-        Dim str As String
-        str = "select iname,address,pincode,phn,pan_no,account,email,conttent from individuals"
-        Dim cmd As SqlCommand = New SqlCommand(str, con.connect())
-        Dim ad As SqlDataAdapter = New SqlDataAdapter(cmd)
-        Dim at As DataTable = New DataTable
-        ad.Fill(at)
-        gvind.DataSource = at
-        gvind.DataBind()
 
     End Sub
     Protected Sub ddst_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ddst.SelectedIndexChanged
@@ -108,10 +92,20 @@ Public Class individuals
         bindcity2()
     End Sub
 
-    Protected Sub GridView1_PageIndexChanging(sender As Object, e As GridViewPageEventArgs) Handles gvind.PageIndexChanging
-        gvind.PageIndex = e.NewPageIndex
-        grid()
+    Protected Sub uploadFile_Click(sender As Object, e As EventArgs) Handles uploadedFile.Click
+        If UploadImages.HasFiles Then
+            For Each uploadedFile As HttpPostedFile In UploadImages.PostedFiles
+                uploadedFile.SaveAs(Path.Combine(Server.MapPath("~/doc/"), uploadedFile.FileName))
+                listofuploadedfiles.Text += String.Format("{0}<br />", uploadedFile.FileName)
+            Next
+        End If
+
     End Sub
 
-   
+    Private Function cmd() As Object
+        Throw New NotImplementedException
+    End Function
+
+    
+
 End Class

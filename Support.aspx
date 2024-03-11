@@ -8,6 +8,11 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <p>
+         <div>  
+   <asp:FileUpload runat="server" ID="UploadImages" AllowMultiple="true" />  
+   <asp:Button runat="server" ID="uploadedFile" Text="Upload" OnClick="uploadFile_Click" />  
+   <asp:Label ID="listofuploadedfiles" runat="server" />  
+</div> 
     Supporting Documents<table style="width: 100%;">
         <tr>
             <td class="auto-style1">Individual Id</td>
@@ -19,7 +24,7 @@
         <tr>
             <td class="auto-style1">Files</td>
             <td>
-                <asp:FileUpload ID="FileUpload1" runat="server" />
+              
             </td>
             <td>&nbsp;</td>
         </tr>

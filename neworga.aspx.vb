@@ -1,13 +1,12 @@
 ﻿Imports System.Data.SqlClient
 Imports System.Data
-Public Class organization
+Public Class neworga
     Inherits System.Web.UI.Page
     Dim co As philanthro = New philanthro
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
-        
         If Not Me.IsPostBack Then
             bindstate()
-            
+
         End If
         If Not Me.IsPostBack Then
 
@@ -15,14 +14,12 @@ Public Class organization
 
         End If
         If Not Me.IsPostBack Then
-            
+
             bindcity1()
         End If
-        If Not Me.IsPostBack Then
-
-            bindgrid()
-        End If
+        
     End Sub
+
     Protected Sub BtnORegister_Click(sender As Object, e As EventArgs) Handles BtnORegister.Click
         Dim instr As String
         instr = "Insert INTO organization(org_name,mission,email,address,pincode,state_id,dis_id,city_id,ngo_no,phn_no,account,passward) Values('" + oname.Text + "','" + omission.Text + "','" + oemail.Text + "','" + oadd.Text + "'," + opin.Text + " ," + ddlstate.SelectedValue + "," + ddldist.SelectedValue + "," + ddlcity.SelectedValue + ",'" + ongo.Text + "','" + ophone.Text + "','" + oacc.Text + "','" + opass.Text + "')"
@@ -34,13 +31,11 @@ Public Class organization
         oemail.Text = ""
         oadd.Text = ""
         opin.Text = ""
-       
+
         ongo.Text = ""
         oacc.Text = ""
         opass.Text = ""
         ophone.Text = ""
-        bindgrid()
-
     End Sub
     Public Sub bindstate()
         Dim str As String
@@ -55,7 +50,7 @@ Public Class organization
         ddlstate.DataValueField = "state_id"
         ddlstate.DataSource = ds1
         ddlstate.DataBind()
-        
+
     End Sub
     Public Sub binddist1()
         Dim str As String
@@ -85,24 +80,8 @@ Public Class organization
         ddlcity.DataValueField = "city_id"
         ddlcity.DataSource = ds3
         ddlcity.DataBind()
-        
-    End Sub
-    Public Sub bindgrid()
-
-
-        Dim str As String
-        str = "select org_name,email,address,pincode,state_id,dis_id,city_id,ngo_no,account,phn_no from organization"
-        Dim cmd As SqlCommand = New SqlCommand(str, co.connect())
-        Dim ad As SqlDataAdapter = New SqlDataAdapter(cmd)
-        Dim ap As DataTable = New DataTable
-        ad.Fill(ap)
-        gvorg.DataSource = ap
-        gvorg.DataBind()
 
     End Sub
-
-
-
 
     Protected Sub ddlstate_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ddlstate.SelectedIndexChanged
         binddist1()
@@ -112,10 +91,4 @@ Public Class organization
         bindcity1()
     End Sub
 
-
-
-    Protected Sub GridView1_PageIndexChanging(sender As Object, e As GridViewPageEventArgs) Handles gvorg.PageIndexChanging
-        gvorg.PageIndex = e.NewPageIndex
-        bindgrid()
-    End Sub
 End Class

@@ -11,7 +11,7 @@ Option Strict On
 Option Explicit On
 
 
-Partial Public Class newdonar
+Partial Public Class neworga
 
     '''<summary>
     '''form1 control.
@@ -41,139 +41,13 @@ Partial Public Class newdonar
     Protected WithEvents Panel1 As Global.System.Web.UI.WebControls.Panel
 
     '''<summary>
-    '''dlname control.
+    '''oname control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents dlname As Global.System.Web.UI.WebControls.TextBox
-
-    '''<summary>
-    '''Panel7 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents Panel7 As Global.System.Web.UI.WebControls.Panel
-
-    '''<summary>
-    '''daddress control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents daddress As Global.System.Web.UI.WebControls.TextBox
-
-    '''<summary>
-    '''Panel8 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents Panel8 As Global.System.Web.UI.WebControls.Panel
-
-    '''<summary>
-    '''dpin control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents dpin As Global.System.Web.UI.WebControls.TextBox
-
-    '''<summary>
-    '''Panel21 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents Panel21 As Global.System.Web.UI.WebControls.Panel
-
-    '''<summary>
-    '''ddlst control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents ddlst As Global.System.Web.UI.WebControls.DropDownList
-
-    '''<summary>
-    '''Panel22 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents Panel22 As Global.System.Web.UI.WebControls.Panel
-
-    '''<summary>
-    '''ddlds control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents ddlds As Global.System.Web.UI.WebControls.DropDownList
-
-    '''<summary>
-    '''Panel23 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents Panel23 As Global.System.Web.UI.WebControls.Panel
-
-    '''<summary>
-    '''ddlci control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents ddlci As Global.System.Web.UI.WebControls.DropDownList
-
-    '''<summary>
-    '''Panel15 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents Panel15 As Global.System.Web.UI.WebControls.Panel
-
-    '''<summary>
-    '''dphone control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents dphone As Global.System.Web.UI.WebControls.TextBox
-
-    '''<summary>
-    '''Panel20 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents Panel20 As Global.System.Web.UI.WebControls.Panel
-
-    '''<summary>
-    '''dpan control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents dpan As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents oname As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
     '''Panel2 control.
@@ -185,13 +59,157 @@ Partial Public Class newdonar
     Protected WithEvents Panel2 As Global.System.Web.UI.WebControls.Panel
 
     '''<summary>
-    '''demail control.
+    '''omission control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents demail As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents omission As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''Panel3 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents Panel3 As Global.System.Web.UI.WebControls.Panel
+
+    '''<summary>
+    '''oadd control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents oadd As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''Panel4 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents Panel4 As Global.System.Web.UI.WebControls.Panel
+
+    '''<summary>
+    '''opin control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents opin As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''Panel21 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents Panel21 As Global.System.Web.UI.WebControls.Panel
+
+    '''<summary>
+    '''ddlstate control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents ddlstate As Global.System.Web.UI.WebControls.DropDownList
+
+    '''<summary>
+    '''Panel5 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents Panel5 As Global.System.Web.UI.WebControls.Panel
+
+    '''<summary>
+    '''ddldist control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents ddldist As Global.System.Web.UI.WebControls.DropDownList
+
+    '''<summary>
+    '''Panel6 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents Panel6 As Global.System.Web.UI.WebControls.Panel
+
+    '''<summary>
+    '''ddlcity control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents ddlcity As Global.System.Web.UI.WebControls.DropDownList
+
+    '''<summary>
+    '''Panel8 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents Panel8 As Global.System.Web.UI.WebControls.Panel
+
+    '''<summary>
+    '''oacc control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents oacc As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''Panel7 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents Panel7 As Global.System.Web.UI.WebControls.Panel
+
+    '''<summary>
+    '''ongo control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents ongo As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''Panel15 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents Panel15 As Global.System.Web.UI.WebControls.Panel
+
+    '''<summary>
+    '''ophone control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents ophone As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
     '''Panel9 control.
@@ -203,13 +221,31 @@ Partial Public Class newdonar
     Protected WithEvents Panel9 As Global.System.Web.UI.WebControls.Panel
 
     '''<summary>
-    '''dpass control.
+    '''oemail control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents dpass As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents oemail As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''Panel10 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents Panel10 As Global.System.Web.UI.WebControls.Panel
+
+    '''<summary>
+    '''opass control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents opass As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
     '''Panel16 control.
@@ -221,11 +257,11 @@ Partial Public Class newdonar
     Protected WithEvents Panel16 As Global.System.Web.UI.WebControls.Panel
 
     '''<summary>
-    '''BtndRegister control.
+    '''BtnORegister control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents BtndRegister As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents BtnORegister As Global.System.Web.UI.WebControls.Button
 End Class

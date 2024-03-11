@@ -1,116 +1,10 @@
-﻿<%@ Page Language="vb" AutoEventWireup="false" CodeBehind="newdonar.aspx.vb" Inherits="PhilanthroPortal.newdonar" %>
+﻿<%@ Page Language="vb" AutoEventWireup="false" CodeBehind="newind.aspx.vb" Inherits="PhilanthroPortal.newind" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title>Donar Registration</title>
-    <script>
-        $(document).ready(function () {
-
-            var Validation = (function () {
-                var emailReg = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-                var digitReg = /^\d+$/;
-
-                var isEmail = function (email) {
-                    return emailReg.test(email);
-                };
-                var isNumber = function (value) {
-                    return digitReg.test(value);
-                };
-                var isRequire = function (value) {
-                    return value == "";
-                };
-                var countChars = function (value, count) {
-                    return value.length == count;
-                };
-                var isChecked = function (el) {
-                    var hasCheck = false;
-                    el.each(function () {
-                        if ($(this).prop('checked')) {
-                            hasCheck = true;
-                        }
-                    });
-                    return hasCheck;
-                };
-                return {
-                    isEmail: isEmail,
-                    isNumber: isNumber,
-                    isRequire: isRequire,
-                    countChars: countChars,
-                    isChecked: isChecked
-                };
-            })();
-
-            var required = $('form').find('[data-required]');
-            var numbers = $('form').find('[data-number]');
-            var emails = $('form').find('[data-email]');
-            var once = $('form').find('[data-once]');
-            var radios = $('.form-item-triple');
-            var groups = [];
-            radios.each(function () {
-                groups.push($(this).find('[data-once]'));
-            });
-            var counts = $('form').find('[data-count]');
-
-            $('#submit').on('click', function () {
-                required.each(function () {
-                    if (Validation.isRequire($(this).val())) {
-                        $(this).siblings('small.errorReq').show();
-                    }
-                });
-                emails.each(function () {
-                    if (!Validation.isEmail($(this).val())) {
-                        $(this).siblings('small.errorEmail').show();
-                    }
-                });
-                $.each(groups, function () {
-                    if (!Validation.isChecked($(this))) {
-                        $(this).parents('.form-item').find('small.errorOnce').show();
-                    }
-                });
-                numbers.each(function () {
-                    if (!Validation.isNumber($(this).val())) {
-                        $(this).siblings('small.errorNum').show();
-                    }
-                });
-                counts.each(function () {
-                    if (!Validation.countChars($(this).val(), $(this).data('count'))) {
-                        $(this).siblings('small.errorChar').show();
-                    }
-                });
-            });
-
-            required.on('keyup blur', function () {
-                if (!Validation.isRequire($(this).val())) {
-                    $(this).siblings('small.errorReq').hide();
-                }
-            });
-            emails.on('keyup blur', function () {
-                if (Validation.isEmail($(this).val())) {
-                    $(this).siblings('small.errorEmail').hide();
-                }
-            });
-            once.on('change', function () {
-                $.each(groups, function (i) {
-                    if (Validation.isChecked(groups[i])) {
-                        groups[i].parents('.form-item').find('small.errorOnce').hide();
-                    }
-                });
-            });
-            numbers.on('keyup blur', function () {
-                if (Validation.isNumber($(this).val())) {
-                    $(this).siblings('small.errorNum').hide();
-                }
-            });
-            counts.on('keyup blur', function () {
-                if (Validation.countChars($(this).val(), $(this).data('count'))) {
-                    $(this).siblings('small.errorChar').hide();
-                }
-            });
-
-        });
-    </script>    
+    <title>Individual Registration</title>
     <style>
         @import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700');
         html {
@@ -297,7 +191,7 @@
 
         .form-item-triple {
             display: flex;
-            align-items: center;
+            align: center;
             padding-top: 6px;
 
             .radio-label {
@@ -393,88 +287,199 @@
             }
         }
     </style>
+     <script>
+         $(document).ready(function () {
 
+             var Validation = (function () {
+                 var emailReg = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+                 var digitReg = /^\d+$/;
+
+                 var isEmail = function (email) {
+                     return emailReg.test(email);
+                 };
+                 var isNumber = function (value) {
+                     return digitReg.test(value);
+                 };
+                 var isRequire = function (value) {
+                     return value == "";
+                 };
+                 var countChars = function (value, count) {
+                     return value.length == count;
+                 };
+                 var isChecked = function (el) {
+                     var hasCheck = false;
+                     el.each(function () {
+                         if ($(this).prop('checked')) {
+                             hasCheck = true;
+                         }
+                     });
+                     return hasCheck;
+                 };
+                 return {
+                     isEmail: isEmail,
+                     isNumber: isNumber,
+                     isRequire: isRequire,
+                     countChars: countChars,
+                     isChecked: isChecked
+                 };
+             })();
+
+             var required = $('form').find('[data-required]');
+             var numbers = $('form').find('[data-number]');
+             var emails = $('form').find('[data-email]');
+             var once = $('form').find('[data-once]');
+             var radios = $('.form-item-triple');
+             var groups = [];
+             radios.each(function () {
+                 groups.push($(this).find('[data-once]'));
+             });
+             var counts = $('form').find('[data-count]');
+
+             $('#submit').on('click', function () {
+                 required.each(function () {
+                     if (Validation.isRequire($(this).val())) {
+                         $(this).siblings('small.errorReq').show();
+                     }
+                 });
+                 emails.each(function () {
+                     if (!Validation.isEmail($(this).val())) {
+                         $(this).siblings('small.errorEmail').show();
+                     }
+                 });
+                 $.each(groups, function () {
+                     if (!Validation.isChecked($(this))) {
+                         $(this).parents('.form-item').find('small.errorOnce').show();
+                     }
+                 });
+                 numbers.each(function () {
+                     if (!Validation.isNumber($(this).val())) {
+                         $(this).siblings('small.errorNum').show();
+                     }
+                 });
+                 counts.each(function () {
+                     if (!Validation.countChars($(this).val(), $(this).data('count'))) {
+                         $(this).siblings('small.errorChar').show();
+                     }
+                 });
+             });
+
+             required.on('keyup blur', function () {
+                 if (!Validation.isRequire($(this).val())) {
+                     $(this).siblings('small.errorReq').hide();
+                 }
+             });
+             emails.on('keyup blur', function () {
+                 if (Validation.isEmail($(this).val())) {
+                     $(this).siblings('small.errorEmail').hide();
+                 }
+             });
+             once.on('change', function () {
+                 $.each(groups, function (i) {
+                     if (Validation.isChecked(groups[i])) {
+                         groups[i].parents('.form-item').find('small.errorOnce').hide();
+                     }
+                 });
+             });
+             numbers.on('keyup blur', function () {
+                 if (Validation.isNumber($(this).val())) {
+                     $(this).siblings('small.errorNum').hide();
+                 }
+             });
+             counts.on('keyup blur', function () {
+                 if (Validation.countChars($(this).val(), $(this).data('count'))) {
+                     $(this).siblings('small.errorChar').hide();
+                 }
+             });
+
+         });
+    </script> 
 </head>
 <body>
-     <form id="form1" runat="server">
-        <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
-        <div>
-            <div class="row">
+    <form id="form1" runat="server">
+         <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+    <div>
+        <div class="row">
                 <section class="section">
                     <header>
-                        <h3>Donar Registration</h3>
+                        <h3>Individual Registration</h3>
                         <h4>Please fill your information below</h4>
                     </header>
-                    <main>
+                      <main>
                         <asp:Panel ID="Panel1" runat="server" CssClass="form-item box-item">
-                            <asp:TextBox runat="server" ID="dlname" placeholder="Name" CssClass="form-item" />
+                            <asp:TextBox runat="server" ID="ilname" placeholder="Name" CssClass="form-item" />
                             <small class="errorReq"><i class="fa fa-asterisk" aria-hidden="true"></i> required field</small>
                         </asp:Panel>
-                        
-                         <asp:Panel ID="Panel7" runat="server" CssClass="form-item box-item">
-                            <asp:TextBox runat="server" ID="daddress" placeholder="House Name" CssClass="form-item" />
+                        <asp:Panel ID="Panel2" runat="server" CssClass="form-item box-item">
+                            <asp:TextBox runat="server" ID="iaddress" placeholder="Address" CssClass="form-item" />
                             <small class="errorReq"><i class="fa fa-asterisk" aria-hidden="true"></i> required field</small>
                         </asp:Panel>
-                        <asp:Panel ID="Panel8" runat="server" CssClass="form-item box-item">
-                            <asp:TextBox runat="server" ID="dpin" placeholder="Pincode" CssClass="form-item" />
+                        <asp:Panel ID="Panel3" runat="server" CssClass="form-item box-item">
+                            <asp:TextBox runat="server" ID="ipin" placeholder="Pincode" CssClass="form-item" />
                             <small class="errorReq"><i class="fa fa-asterisk" aria-hidden="true"></i> required field</small>
-                            <small class="errorNum"><i class="fa fa-asterisk" aria-hidden="true"></i> must be a number</small>
                         </asp:Panel>
-                         <asp:Panel ID="Panel21" runat="server" CssClass="form-item">
-                            <asp:DropDownList runat="server" ID="ddlst" CssClass="form-item" AppendDataBoundItems="true" AutoPostBack="True">
+                      <asp:Panel ID="Panel21" runat="server" CssClass="form-item">
+                            <asp:DropDownList runat="server" ID="ddst" CssClass="form-item" AppendDataBoundItems="true" AutoPostBack="True">
                                 <asp:ListItem Text="-- Select State --" Value="" />
                             </asp:DropDownList>
                             <small class="errorReq"><i class="fa fa-asterisk" aria-hidden="true"></i> required field</small>
                         </asp:Panel>
-                         
-                        <asp:Panel ID="Panel22" runat="server" CssClass="form-item">
-                            <asp:DropDownList runat="server" ID="ddlds" CssClass="form-item" AppendDataBoundItems="true" AutoPostBack="True">
-                                <asp:ListItem Text="-- Select District --" Value="" />
+                          <asp:Panel ID="Panel5" runat="server" CssClass="form-item">
+                            <asp:DropDownList runat="server" ID="ddds" CssClass="form-item" AppendDataBoundItems="true" AutoPostBack="True">
+                                <asp:ListItem Text="-- Select State --" Value="" />
                             </asp:DropDownList>
                             <small class="errorReq"><i class="fa fa-asterisk" aria-hidden="true"></i> required field</small>
                         </asp:Panel>
-                        <asp:Panel ID="Panel23" runat="server" CssClass="form-item">
-                            <asp:DropDownList runat="server" ID="ddlci" CssClass="form-item" AppendDataBoundItems="true" AutoPostBack="True">
-                                <asp:ListItem Text="-- Select City --" Value="" />
+                          <asp:Panel ID="Panel6" runat="server" CssClass="form-item">
+                            <asp:DropDownList runat="server" ID="ddci" CssClass="form-item" AppendDataBoundItems="true" AutoPostBack="True">
+                                <asp:ListItem Text="-- Select State --" Value="" />
                             </asp:DropDownList>
                             <small class="errorReq"><i class="fa fa-asterisk" aria-hidden="true"></i> required field</small>
                         </asp:Panel>
-                       
-                        <asp:Panel ID="Panel15" runat="server" CssClass="form-item box-item">
-                            <asp:TextBox runat="server" ID="dphone" placeholder="Phone Number" CssClass="form-item" />
+                        <asp:Panel ID="Panel8" runat="server" CssClass="form-item box-item">
+                            <asp:TextBox runat="server" ID="iacc" placeholder="Account Number" CssClass="form-item" />
+                            <small class="errorReq"><i class="fa fa-asterisk" aria-hidden="true"></i> required field</small>
+                        </asp:Panel>
+                            <asp:Panel ID="Panel20" runat="server" CssClass="form-item">
+                                <asp:TextBox runat="server" ID="ipan" placeholder="Pan Number" CssClass="form-item" />
+                                <small class="errorReq"><i class="fa fa-asterisk" aria-hidden="true"></i> required field</small>
+                            </asp:Panel>
+                           <asp:Panel ID="Panel4" runat="server" CssClass="form-item">
+                                <asp:TextBox runat="server" ID="icond" placeholder="Condition" CssClass="form-item" />
+                                <small class="errorReq"><i class="fa fa-asterisk" aria-hidden="true"></i> required field</small>
+                            </asp:Panel>
+                           
+                          <asp:Panel ID="Panel11" runat="server" CssClass="form-item">
+                             <asp:FileUpload runat="server" ID="UploadImages" AllowMultiple="true" />  
+                             <asp:Button runat="server" ID="uploadedFile" Text="Upload" />
+                              <asp:Label ID="listofuploadedfiles" runat="server" /> 
+                          </asp:Panel>
+                          <asp:Panel ID="Panel15" runat="server" CssClass="form-item box-item">
+                            <asp:TextBox runat="server" ID="iphone" placeholder="Phone Number" CssClass="form-item" />
                             <small class="errorReq"><i class="fa fa-asterisk" aria-hidden="true"></i> required field</small>
                             <small class="errorNum"><i class="fa fa-asterisk" aria-hidden="true"></i> must be a number</small>
                             <small class="errorChar"><i class="fa fa-asterisk" aria-hidden="true"></i> must be 10 digits</small>
                         </asp:Panel>
-                       
-                        <asp:Panel ID="Panel20" runat="server" CssClass="form-item">
-                                <asp:TextBox runat="server" ID="dpan" placeholder="Pan Number" CssClass="form-item" />
-                                <small class="errorReq"><i class="fa fa-asterisk" aria-hidden="true"></i> required field</small>
-                                <small class="errorNum"><i class="fa fa-asterisk" aria-hidden="true"></i> must be a number</small>
-                            </asp:Panel>
-                        
-                         <asp:Panel ID="Panel2" runat="server" CssClass="form-item box-item">
-                            <asp:TextBox runat="server" ID="demail" placeholder="Email" CssClass="form-item" />
+                    <asp:Panel ID="Panel9" runat="server" CssClass="form-item box-item">
+                            <asp:TextBox runat="server" ID="iemail" placeholder="Email" CssClass="form-item" />
                             <small class="errorReq"><i class="fa fa-asterisk" aria-hidden="true"></i> required field</small>
                             <small class="errorEmail"><i class="fa fa-asterisk" aria-hidden="true"></i> email is not valid</small>
                         </asp:Panel>
-                        <asp:Panel ID="Panel9" runat="server" CssClass="form-item box-item">
-                            <asp:TextBox runat="server" ID="dpass" TextMode="Password" placeholder="Password" CssClass="form-item" />
+                        <asp:Panel ID="Panel10" runat="server" CssClass="form-item box-item">
+                            <asp:TextBox runat="server" ID="ipass" TextMode="Password" placeholder="Password" CssClass="form-item" />
                             <small class="errorReq"><i class="fa fa-asterisk" aria-hidden="true"></i> required field</small>
                         </asp:Panel>
-                       
-                        <asp:Panel ID="Panel16" runat="server" CssClass="form-item">
-                            <asp:Button runat="server" ID="BtndRegister" Text="Submit" CssClass="submit" />
+                         <asp:Panel ID="Panel16" runat="server" CssClass="form-item">
+                            <asp:Button runat="server" ID="BtnIRegister" Text="Submit" CssClass="submit" />
                         </asp:Panel>
-                    </main>
+                          </main>
                     <footer>
                         <p>Already have an account? <a href="login.aspx">Login here</a></p>
-                    </footer>
-                    <i class="wave"></i>
-              
+                    </footer>    
+                    <i class="wave"></i>   
                     </section>
-            </div>
         </div>
+    
+    </div>
     </form>
 </body>
 </html>

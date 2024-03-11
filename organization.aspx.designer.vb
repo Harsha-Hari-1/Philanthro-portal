@@ -41,13 +41,13 @@ Partial Public Class organization
     Protected WithEvents oemail As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''oaddress control.
+    '''oadd control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents oaddress As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents oadd As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
     '''opin control.

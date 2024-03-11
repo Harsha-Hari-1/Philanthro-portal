@@ -1,11 +1,11 @@
-﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Site3.Master" CodeBehind="organization.aspx.vb" Inherits="PhilanthroPortal.organization" %>
+﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Site1.Master" CodeBehind="organization.aspx.vb" Inherits="PhilanthroPortal.organization" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style type="text/css">
         .auto-style1 {
-            width: 206px;
+            width: 345px;
         }
         .auto-style3 {
-            width: 206px;
+            width: 345px;
             height: 29px;
         }
         .auto-style4 {
@@ -13,7 +13,7 @@
             height: 29px;
         }
         .auto-style5 {
-            width: 206px;
+            width: 345px;
             height: 114px;
         }
         .auto-style6 {
@@ -105,32 +105,33 @@ form label {
     font-weight: 600;
     width: 100%;
     padding: 5px 15px;
-    color: var(--main-color);
+    /*color: var(--main-color);*/
 }
 
 form input,
 form select {
-    padding: 10px;
-    border-radius: 8px;
-    border: none;
-    background-color: #ffffff6d;
-    width: 100%;
-    outline: none;
-    color: var(--main-color);
-    margin-bottom: 10px;
+        border-style: none;
+            border-color: inherit;
+            border-width: medium;
+            padding: 10px;
+            border-radius: 8px;
+            /*background-color: #ffffff6d;*/
+            outline: none;
+            /*color: var(--main-color);*/
+            margin-bottom: 10px;
 }
 
 form input:focus,
 form select:focus,
 form input:hover,
 form select:hover {
-    border: 1px solid var(--main-color);
-}
+    /*border: 1px solid var(--main-color);
+}*/
 
-form .Phone {
+/*form .Phone {
     display: grid;
-    grid-template-columns: 35% 65%;
-}
+    /*grid-template-columns: 35% 65%;*/
+}*/
 
 form select {
     width: 100%;
@@ -153,13 +154,13 @@ form .Phone input {
     border-radius: 5px;
     height: 25px;
     position: relative;
-    border: 1px solid var(--main-color);
+    border: 1px solid /*var(--main-color)*/;
     transition-duration: 0.2s;
 }
 
-.CheckBoxCont:hover {
+/*.CheckBoxCont:hover {
     background-color: var(--main-color);
-}
+}*/
 
 .CheckBoxCont:hover .Tickline2 {
     background-color: white;
@@ -173,7 +174,7 @@ form .Phone input {
 .Tickline2,
 .Tickline1 {
 
-    background-color: var(--main-color);
+    /*background-color: var(--main-color);*/
     border-radius: 20px;
     height: 3px;
     position: absolute;
@@ -203,17 +204,17 @@ form .Phone input {
 
 .Subscribe label {
     padding: 10px;
-    width: fit-content;
+    width: auto;
 
 }
 
 form button {
-    width: fit-content;
+    width: auto;
     border-radius: 5px;
     padding: 10px 20px;
     font-size: 1.1rem;
     color: white;
-    background-color: var(--main-color);
+    background-color: lightgoldenrodyellow;
     border: none;
     cursor: pointer;
     margin: auto;
@@ -224,10 +225,10 @@ form button {
         display: none;
     }
 
-    #FormContainer {
+    /*#FormContainer {
         grid-template-columns: 100%;
         width: 380px;
-    }
+    }*/
 
 
 }
@@ -266,49 +267,46 @@ form button {
 </script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-        <div id="FormContainer">
-        <div class="ImgContainer">
-
-
-        </div>
+<%--        <div id="FormContainer">
+       
         <form id="Form">
             <h1 id="FormHeading">Sign Up</h1>
-            <div class="Name">
-               <table style="background-color:lightpink; flex-align:center; width: 963px;" align="center" >
+            <div class="Name">--%>
+               <table style="background-color:lightpink; flex-align:center; width: 655px;" align="center" >
             <tr>
                 <td class="auto-style1">Organization Name</td>
                 <td class="auto-style7">
-                    <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="oname" runat="server" Width="180px"></asp:TextBox>
                 </td>
             </tr>
             <tr>
                 <td class="auto-style1">Mission</td>
                 <td class="auto-style7">
-                    <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="omission" runat="server"></asp:TextBox>
                 </td>
             </tr>
             <tr>
                 <td class="auto-style1">Mail Id</td>
                 <td class="auto-style7">
-                    <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="oemail" runat="server"></asp:TextBox>
                 </td>
             </tr>
             <tr>
                 <td class="auto-style1">Address</td>
                 <td class="auto-style7">
-                    <asp:TextBox ID="TextBox4" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="oadd" runat="server"></asp:TextBox>
                 </td>
             </tr>
             <tr>
                 <td class="auto-style1">Pincode</td>
                 <td class="auto-style7">
-                    <asp:TextBox ID="TextBox5" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="opin" runat="server"></asp:TextBox>
                 </td>
             </tr>
             <tr>
                 <td class="auto-style1">State</td>
                 <td class="auto-style7">
-                    <asp:DropDownList ID="DropDownList1" runat="server" Width="167px" AutoPostBack="True">
+                    <asp:DropDownList ID="ddlstate" runat="server" Width="167px" AutoPostBack="True">
                     </asp:DropDownList>
                 &nbsp;&nbsp;
                 </td>
@@ -316,68 +314,46 @@ form button {
             <tr>
                 <td class="auto-style1">District</td>
                 <td class="auto-style7">
-                    <asp:DropDownList ID="DropDownList2" runat="server" Width="166px" AutoPostBack="True">
+                    <asp:DropDownList ID="ddldist" runat="server" Width="166px" AutoPostBack="True">
                     </asp:DropDownList>
                 </td>
             </tr>
             <tr>
                 <td class="auto-style3">City</td>
                 <td class="auto-style4">
-                    <asp:DropDownList ID="DropDownList3" runat="server" Width="168px" AutoPostBack="True">
+                    <asp:DropDownList ID="ddlcity" runat="server" Width="168px" AutoPostBack="True">
                     </asp:DropDownList>
                 </td>
             </tr>
             <tr>
                 <td class="auto-style1">NGO No</td>
                 <td class="auto-style7">
-                    <asp:TextBox ID="TextBox6" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="ongo" runat="server"></asp:TextBox>
                 </td>
             </tr>
             <tr>
                 <td class="auto-style1">Account No</td>
                 <td class="auto-style7">
-                    <asp:TextBox ID="TextBox7" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="oacc" runat="server"></asp:TextBox>
                 </td>
             </tr>
             <tr>
                 <td class="auto-style1">Password</td>
                 <td class="auto-style7">
-                    <asp:TextBox ID="TextBox8" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="opass" runat="server"></asp:TextBox>
                 </td>
             </tr>
             <tr>
                 <td class="auto-style1">Phone No</td>
                 <td class="auto-style7">
-                    <asp:TextBox ID="TextBox9" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="ophone" runat="server"></asp:TextBox>
                 </td>
                 </tr>
-                   </table>
-            </div>
-            </form>
-      <form>
-          <div class="Phone">
-                <table>
-                <tr>
-                <td class="auto-style5"></td>
-                <td class="auto-style6">
-                    <asp:Button ID="Button1" runat="server" Text="Register" style="height: 29px" />
-                </td>
-                    </tr>
-                </table>
-            </div>
-      </form>
-
-  
-
-
-  
-        <table>
-        
-            <tr>
+                   <tr>
                 <td class="auto-style5"></td>
                 <td class="auto-style6">
                     <asp:Button ID="BtnORegister" runat="server" Text="Register" style="height: 29px" />
-                    <asp:GridView ID="gvorg" runat="server" AutoGenerateColumns="False" BackColor="White" BorderColor="#999999" BorderStyle="None" BorderWidth="1px" CellPadding="3" GridLines="Vertical" AllowPaging="True" PageIndex="3" PageSize="5" Width="761px">
+                    <asp:GridView ID="gvorg" runat="server" AutoGenerateColumns="False" BackColor="White" BorderColor="#999999" BorderStyle="None" BorderWidth="1px" CellPadding="3" GridLines="Vertical" AllowPaging="True" PageIndex="3" PageSize="5" Width="761px" Height="16px">
                         <AlternatingRowStyle BackColor="#DCDCDC" />
                         <Columns>
                             <asp:BoundField DataField="org_name" HeaderText="Organoization Name" />
@@ -403,6 +379,58 @@ form button {
                     </asp:GridView>
                 </td>
             </tr>
+                   </table>
+            <%--</div>
+            </form>
+      <form>--%>
+          <%--<div class="Phone">
+                <table>
+                <tr>
+                <td class="auto-style5"></td>
+                <td class="auto-style6">
+                    <asp:Button ID="Button1" runat="server" Text="Register" style="height: 29px" />
+                </td>
+                    </tr>
+                </table>
+            </div>
+      </form>--%>
+
+  
+
+
+  
+        <table>
+        
+            <%--<tr>
+                <td class="auto-style5"></td>
+                <td class="auto-style6">
+                    <asp:Button ID="BtnORegister" runat="server" Text="Register" style="height: 29px" />
+                    <asp:GridView ID="gvorg" runat="server" AutoGenerateColumns="False" BackColor="White" BorderColor="#999999" BorderStyle="None" BorderWidth="1px" CellPadding="3" GridLines="Vertical" AllowPaging="True" PageIndex="3" PageSize="5" Width="761px" Height="16px">
+                        <AlternatingRowStyle BackColor="#DCDCDC" />
+                        <Columns>
+                            <asp:BoundField DataField="org_name" HeaderText="Organoization Name" />
+                            <asp:BoundField DataField="email" HeaderText="Mail Id" />
+                            <asp:BoundField DataField="address" HeaderText="Address" />
+                            <asp:BoundField DataField="pincode" HeaderText="Pincode" />
+                            <asp:BoundField DataField="state_id" HeaderText="State" />
+                            <asp:BoundField DataField="dis_id" HeaderText="District" />
+                            <asp:BoundField DataField="city_id" HeaderText="City" />
+                            <asp:BoundField DataField="ngo_no" HeaderText="NGO No" />
+                            <asp:BoundField DataField="account" HeaderText="Account No" />
+                            <asp:BoundField DataField="phn_no" HeaderText="Phone No" />
+                        </Columns>
+                        <FooterStyle BackColor="#CCCCCC" ForeColor="Black" />
+                        <HeaderStyle BackColor="#000084" Font-Bold="True" ForeColor="White" />
+                        <PagerStyle BackColor="#999999" ForeColor="Black" HorizontalAlign="Center" />
+                        <RowStyle BackColor="#EEEEEE" ForeColor="Black" />
+                        <SelectedRowStyle BackColor="#008A8C" Font-Bold="True" ForeColor="White" />
+                        <SortedAscendingCellStyle BackColor="#F1F1F1" />
+                        <SortedAscendingHeaderStyle BackColor="#0000A9" />
+                        <SortedDescendingCellStyle BackColor="#CAC9C9" />
+                        <SortedDescendingHeaderStyle BackColor="#000065" />
+                    </asp:GridView>
+                </td>
+            </tr>--%>
    </table>
      </div>
 </asp:Content>

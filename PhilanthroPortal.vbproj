@@ -129,12 +129,14 @@
     <Content Include="login.aspx" />
     <Content Include="mfund.aspx" />
     <Content Include="newdonar.aspx" />
-    <Content Include="neworg.aspx" />
+    <Content Include="newind.aspx" />
+    <Content Include="neworga.aspx" />
     <Content Include="org2.aspx" />
     <Content Include="organization.aspx" />
     <Content Include="Register.aspx" />
     <Content Include="State.aspx" />
     <Content Include="Support.aspx" />
+    <Content Include="supportnew.aspx" />
     <Content Include="type.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -250,11 +252,18 @@
       <DependentUpon>newdonar.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="neworg.aspx.designer.vb">
-      <DependentUpon>neworg.aspx</DependentUpon>
+    <Compile Include="newind.aspx.designer.vb">
+      <DependentUpon>newind.aspx</DependentUpon>
     </Compile>
-    <Compile Include="neworg.aspx.vb">
-      <DependentUpon>neworg.aspx</DependentUpon>
+    <Compile Include="newind.aspx.vb">
+      <DependentUpon>newind.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="neworga.aspx.designer.vb">
+      <DependentUpon>neworga.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="neworga.aspx.vb">
+      <DependentUpon>neworga.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="org2.aspx.designer.vb">
@@ -320,6 +329,13 @@
       <DependentUpon>Support.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
+    <Compile Include="supportnew.aspx.designer.vb">
+      <DependentUpon>supportnew.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="supportnew.aspx.vb">
+      <DependentUpon>supportnew.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="type.aspx.designer.vb">
       <DependentUpon>type.aspx</DependentUpon>
     </Compile>
@@ -356,6 +372,9 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="doc\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

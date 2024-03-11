@@ -53,9 +53,9 @@ Public Class loginsam
         If rbdonar.Checked = True Then
             Response.Redirect("newdonar.aspx")
         ElseIf rborg.Checked = True Then
-            Response.Redirect("organization.aspx")
-        ElseIf rborg.Checked = True Then
-            Response.Redirect("individuals.aspx")
+            Response.Redirect("neworga.aspx")
+        ElseIf rbind.Checked = True Then
+            Response.Redirect("newind.aspx")
         End If
     End Sub
 End Class
