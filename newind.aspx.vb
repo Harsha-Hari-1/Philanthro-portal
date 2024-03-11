@@ -22,9 +22,21 @@ Public Class newind
 
     Protected Sub BtnIRegister_Click(sender As Object, e As EventArgs) Handles BtnIRegister.Click
         Dim instr As String
-        instr = "Insert INTO [individuals](iname,address,pincode,state_id,dis_id,city_id,phn,pan_no,conttent,account,email,password) Values('" + ilname.Text + "','" + iaddress.Text + "'," + ipin.Text + " ," + ddst.SelectedValue + "," + ddds.SelectedValue + "," + ddci.SelectedValue + ",'" + iphone.Text + "','" + ipan.Text + "','" + icond.Text + "','" + iacc.Text + "','" + iemail.Text + "','" + ipass.Text + "')"
+
+        instr = "Insert INTO [individuals](iname,address,pincode,state_id,dis_id,city_id,phn,pan_no,conttent,account,email,password) Values('" + ilname.Text + "','" + iaddress.Text + "'," + ipin.Text + " ," + ddst.SelectedValue + "," + ddds.SelectedValue + "," + ddci.SelectedValue + ",'" + iphone.Text + "','" + ipan.Text + "','" + icond.Text + "','" + iacc.Text + "','" + iemail.Text + "','" + ipass.Text + "');SELECT SCOPE_IDENTITY()"
         Dim cmddon As SqlCommand = New SqlCommand(instr, con.connect())
-        cmddon.ExecuteNonQuery()
+        Dim currentID As Integer = cmddon.ExecuteScalar()
+        If UploadImages.HasFiles Then
+            For Each uploadedFile As HttpPostedFile In UploadImages.PostedFiles
+                uploadedFile.SaveAs(Path.Combine(Server.MapPath("~/doc/"), uploadedFile.FileName))
+                listofuploadedfiles.Text += String.Format("{0}<br />", uploadedFile.FileName)
+            Next
+        End If
+        Dim pth As String = "~/doc/" + UploadImages.FileName
+        Dim sup As String
+        sup = "Insert into support(reg_id,files) values(" + currentID.ToString + ",'" + pth + "') "
+        Dim cmd As SqlCommand = New SqlCommand(sup, con.connect())
+        cmd.ExecuteNonQuery()
         Response.Write("<script>alert('data saved');</script>")
 
         ilname.Text = ""
@@ -37,7 +49,9 @@ Public Class newind
         iacc.Text = ""
         iemail.Text = ""
         ipass.Text = ""
-        cmd.CommandText = "INSERT INTO support (reg_id) VALUES ('" + formvalue + "'); SELECT SCOPE_IDENTITY()"
+        
+
+        
     End Sub
     Public Sub bindstate2()
         Dim str As String
@@ -93,18 +107,17 @@ Public Class newind
     End Sub
 
     Protected Sub uploadFile_Click(sender As Object, e As EventArgs) Handles uploadedFile.Click
-        If UploadImages.HasFiles Then
-            For Each uploadedFile As HttpPostedFile In UploadImages.PostedFiles
-                uploadedFile.SaveAs(Path.Combine(Server.MapPath("~/doc/"), uploadedFile.FileName))
-                listofuploadedfiles.Text += String.Format("{0}<br />", uploadedFile.FileName)
-            Next
-        End If
+        
 
     End Sub
 
-    Private Function cmd() As Object
-        Throw New NotImplementedException
-    End Function
+    'Private Function cmd() As Object
+    '    Throw New NotImplementedException
+    'End Function
+
+    'Private Function reg_id() As String
+    '    Throw New NotImplementedException
+    'End Function
 
     
 
