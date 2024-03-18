@@ -168,6 +168,10 @@ body {
                 font-size:20px;
                 text-emphasis-color:white;
             }
+
+        .custom-input {
+            color:white;
+        }
         
     </style>
     <script>
@@ -200,11 +204,11 @@ body {
 		<div class="form">
             <div class="log">
                 Email
-			<asp:TextBox ID="etext" runat="server" Width="100%" AutoPostBack="True" ></asp:TextBox>
+			<asp:TextBox ID="etext" runat="server" Width="100%" AutoPostBack="True" class="custom-input"></asp:TextBox>
             
                 Password
                 <br />
-                <asp:TextBox ID="utext" runat="server" Width="100%" AutoPostBack="True"></asp:TextBox>
+                <asp:TextBox ID="utext" runat="server" Width="100%" AutoPostBack="True" class="custom-input"></asp:TextBox>
             </div>
             
 			<div class="login">

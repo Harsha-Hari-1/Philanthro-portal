@@ -11,50 +11,32 @@ Option Strict On
 Option Explicit On
 
 
-Partial Public Class dontoind
+Partial Public Class donate
 
     '''<summary>
-    '''txtuser control.
+    '''form1 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents txtuser As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents form1 As Global.System.Web.UI.HtmlControls.HtmlForm
 
     '''<summary>
-    '''txtind control.
+    '''CustomerButton control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents txtind As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents CustomerButton As Global.System.Web.UI.WebControls.LinkButton
 
     '''<summary>
-    '''dtiamt control.
+    '''ProviderButton control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents dtiamt As Global.System.Web.UI.WebControls.TextBox
-
-    '''<summary>
-    '''dtidate control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents dtidate As Global.System.Web.UI.WebControls.TextBox
-
-    '''<summary>
-    '''indpay control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents indpay As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents ProviderButton As Global.System.Web.UI.WebControls.LinkButton
 End Class

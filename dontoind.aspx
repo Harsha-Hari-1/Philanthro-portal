@@ -4,13 +4,17 @@
         .auto-style1 {
             width: 250px;
         }
+         .main {
+            background-color:grey;
+            text-decoration:black;
+            width:75%;
+
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <p>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Donation To Individuals</p>
-    
-        <table style="width:100%;">
+    <div class="main"><table style="width:100%;">
             <tr>
                 <td class="auto-style1">
                     &nbsp;</td>
@@ -18,49 +22,49 @@
                     &nbsp;</td>
                 <td>&nbsp;</td>
             </tr>
-            <tr>
-                <td class="auto-style1">User Type</td>
+           <%-- <tr>
+                <td class="auto-style1" style="color:black;">User Type</td>
                 <td>
                     <asp:DropDownList ID="ddluser" runat="server" Width="168px">
                     </asp:DropDownList>
                 </td>
                 <td>&nbsp;</td>
-            </tr>
+            </tr>--%>
             <tr>
-                <td class="auto-style1">Donar/Organization</td>
-                <td>
-                    <asp:TextBox ID="txtdo" runat="server"></asp:TextBox>
+                <td class="auto-style1" style="color:black;">Donar Name</td>
+                 <td>
+                     <asp:TextBox ID="txtuser" runat="server"></asp:TextBox>
                 </td>
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td class="auto-style1">Individual Name</td>
+                <td class="auto-style1" style="color:black;">Individual Name</td>
                 <td>
-                    <asp:TextBox ID="dindividual" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="txtind" runat="server"></asp:TextBox>
                 </td>
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td class="auto-style1">Amount</td>
+                <td class="auto-style1"style="color:black;">Amount</td>
                 <td>
                     <asp:TextBox ID="dtiamt" runat="server"></asp:TextBox>
                 </td>
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td class="auto-style1">Date</td>
+                <td class="auto-style1" style="color:black;">Date</td>
                 <td>
                     <asp:TextBox ID="dtidate" runat="server"></asp:TextBox>
                 </td>
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td class="auto-style1">&nbsp;</td>
                 <td>
-                    <asp:Button ID="Button1" runat="server" Text="Donate" style="height: 29px" />
+                    <asp:Button ID="indpay" runat="server" Text="Pay" style="height: 29px" align="center" />
                 </td>
                 <td>&nbsp;</td>
             </tr>
         </table>
-    
+    </div>
+        
 </asp:Content>

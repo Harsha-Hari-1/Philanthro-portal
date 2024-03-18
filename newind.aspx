@@ -448,11 +448,7 @@
                                 <small class="errorReq"><i class="fa fa-asterisk" aria-hidden="true"></i> required field</small>
                             </asp:Panel>
                            
-                          <asp:Panel ID="Panel11" runat="server" CssClass="form-item">
-                             <asp:FileUpload runat="server" ID="UploadImages" AllowMultiple="true" />  
-                             <asp:Button runat="server" ID="uploadedFile" Text="Upload" />
-                              <asp:Label ID="listofuploadedfiles" runat="server" /> 
-                          </asp:Panel>
+                          
                           <asp:Panel ID="Panel15" runat="server" CssClass="form-item box-item">
                             <asp:TextBox runat="server" ID="iphone" placeholder="Phone Number" CssClass="form-item" />
                             <small class="errorReq"><i class="fa fa-asterisk" aria-hidden="true"></i> required field</small>
@@ -468,9 +464,15 @@
                             <asp:TextBox runat="server" ID="ipass" TextMode="Password" placeholder="Password" CssClass="form-item" />
                             <small class="errorReq"><i class="fa fa-asterisk" aria-hidden="true"></i> required field</small>
                         </asp:Panel>
+                          <asp:Panel ID="Panel11" runat="server" CssClass="form-item">
+                             <asp:FileUpload runat="server" ID="UploadImages" AllowMultiple="true" />  
+                            
+                              <asp:Label ID="listofuploadedfiles" runat="server" /> 
+                          </asp:Panel>
                          <asp:Panel ID="Panel16" runat="server" CssClass="form-item">
                             <asp:Button runat="server" ID="BtnIRegister" Text="Submit" CssClass="submit" />
                         </asp:Panel>
+                          
                           </main>
                     <footer>
                         <p>Already have an account? <a href="login.aspx">Login here</a></p>

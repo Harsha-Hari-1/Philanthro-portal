@@ -106,11 +106,7 @@ Public Class newind
         bindcity2()
     End Sub
 
-    Protected Sub uploadFile_Click(sender As Object, e As EventArgs) Handles uploadedFile.Click
-        
-
-    End Sub
-
+   
     'Private Function cmd() As Object
     '    Throw New NotImplementedException
     'End Function

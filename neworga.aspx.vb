@@ -1,5 +1,7 @@
 ﻿Imports System.Data.SqlClient
 Imports System.Data
+Imports System.IO
+
 Public Class neworga
     Inherits System.Web.UI.Page
     Dim co As philanthro = New philanthro
@@ -17,14 +19,25 @@ Public Class neworga
 
             bindcity1()
         End If
-        
+
     End Sub
 
     Protected Sub BtnORegister_Click(sender As Object, e As EventArgs) Handles BtnORegister.Click
-        Dim instr As String
-        instr = "Insert INTO organization(org_name,mission,email,address,pincode,state_id,dis_id,city_id,ngo_no,phn_no,account,passward) Values('" + oname.Text + "','" + omission.Text + "','" + oemail.Text + "','" + oadd.Text + "'," + opin.Text + " ," + ddlstate.SelectedValue + "," + ddldist.SelectedValue + "," + ddlcity.SelectedValue + ",'" + ongo.Text + "','" + ophone.Text + "','" + oacc.Text + "','" + opass.Text + "')"
-        Dim cmdo As SqlCommand = New SqlCommand(instr, co.connect())
-        cmdo.ExecuteNonQuery()
+        Dim instrs As String
+        instrs = "Insert INTO organization(org_name,mission,email,address,pincode,state_id,dis_id,city_id,ngo_no,phn_no,account,password) Values('" + oname.Text + "','" + omission.Text + "','" + oemail.Text + "','" + oadd.Text + "'," + opin.Text + " ," + ddlstate.SelectedValue + "," + ddldist.SelectedValue + "," + ddlcity.SelectedValue + ",'" + ongo.Text + "','" + ophone.Text + "','" + oacc.Text + "','" + opass.Text + "');SELECT SCOPE_IDENTITY()"
+        Dim cmdond As SqlCommand = New SqlCommand(instrs, co.connect())
+        Dim currentID As Integer = cmdond.ExecuteScalar()
+        If docorg.HasFiles Then
+            For Each uploadedFile As HttpPostedFile In docorg.PostedFiles
+                uploadedFile.SaveAs(Path.Combine(Server.MapPath("~/doc/"), uploadedFile.FileName))
+                listofuploaded.Text += String.Format("{0}<br />", uploadedFile.FileName)
+            Next
+        End If
+        Dim pthorg As String = "~/doc/" + docorg.FileName
+        Dim suporg As String
+        suporg = "Insert into sup_org(org_id,sup_file) values(" + currentID.ToString + ",'" + pthorg + "') "
+        Dim cmd As SqlCommand = New SqlCommand(suporg, co.connect())
+        cmd.ExecuteNonQuery()
         Response.Write("<script>alert('data saved');</script>")
         oname.Text = ""
         omission.Text = ""

@@ -6,513 +6,17 @@ PhilanthroPortal
 </name>
 </assembly>
 <members>
-<member name="F:PhilanthroPortal.supportnew.form1">
+<member name="F:PhilanthroPortal.viewind.gd1">
 	<summary>
-form1 control.
+gd1 control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:PhilanthroPortal.supportnew.UploadImages">
+</member><member name="F:PhilanthroPortal.vieworg.GVCV">
 	<summary>
-UploadImages control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PhilanthroPortal.supportnew.uploadedFile">
-	<summary>
-uploadedFile control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PhilanthroPortal.supportnew.listofuploadedfiles">
-	<summary>
-listofuploadedfiles control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PhilanthroPortal.newind.form1">
-	<summary>
-form1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PhilanthroPortal.newind.ScriptManager1">
-	<summary>
-ScriptManager1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PhilanthroPortal.newind.Panel1">
-	<summary>
-Panel1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PhilanthroPortal.newind.ilname">
-	<summary>
-ilname control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PhilanthroPortal.newind.Panel2">
-	<summary>
-Panel2 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PhilanthroPortal.newind.iaddress">
-	<summary>
-iaddress control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PhilanthroPortal.newind.Panel3">
-	<summary>
-Panel3 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PhilanthroPortal.newind.ipin">
-	<summary>
-ipin control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PhilanthroPortal.newind.Panel21">
-	<summary>
-Panel21 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PhilanthroPortal.newind.ddst">
-	<summary>
-ddst control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PhilanthroPortal.newind.Panel5">
-	<summary>
-Panel5 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PhilanthroPortal.newind.ddds">
-	<summary>
-ddds control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PhilanthroPortal.newind.Panel6">
-	<summary>
-Panel6 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PhilanthroPortal.newind.ddci">
-	<summary>
-ddci control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PhilanthroPortal.newind.Panel8">
-	<summary>
-Panel8 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PhilanthroPortal.newind.iacc">
-	<summary>
-iacc control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PhilanthroPortal.newind.Panel20">
-	<summary>
-Panel20 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PhilanthroPortal.newind.ipan">
-	<summary>
-ipan control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PhilanthroPortal.newind.Panel4">
-	<summary>
-Panel4 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PhilanthroPortal.newind.icond">
-	<summary>
-icond control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PhilanthroPortal.newind.Panel11">
-	<summary>
-Panel11 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PhilanthroPortal.newind.UploadImages">
-	<summary>
-UploadImages control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PhilanthroPortal.newind.uploadedFile">
-	<summary>
-uploadedFile control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PhilanthroPortal.newind.listofuploadedfiles">
-	<summary>
-listofuploadedfiles control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PhilanthroPortal.newind.Panel15">
-	<summary>
-Panel15 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PhilanthroPortal.newind.iphone">
-	<summary>
-iphone control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PhilanthroPortal.newind.Panel9">
-	<summary>
-Panel9 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PhilanthroPortal.newind.iemail">
-	<summary>
-iemail control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PhilanthroPortal.newind.Panel10">
-	<summary>
-Panel10 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PhilanthroPortal.newind.ipass">
-	<summary>
-ipass control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PhilanthroPortal.newind.Panel16">
-	<summary>
-Panel16 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PhilanthroPortal.newind.BtnIRegister">
-	<summary>
-BtnIRegister control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PhilanthroPortal.neworga.form1">
-	<summary>
-form1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PhilanthroPortal.neworga.ScriptManager1">
-	<summary>
-ScriptManager1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PhilanthroPortal.neworga.Panel1">
-	<summary>
-Panel1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PhilanthroPortal.neworga.oname">
-	<summary>
-oname control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PhilanthroPortal.neworga.Panel2">
-	<summary>
-Panel2 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PhilanthroPortal.neworga.omission">
-	<summary>
-omission control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PhilanthroPortal.neworga.Panel3">
-	<summary>
-Panel3 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PhilanthroPortal.neworga.oadd">
-	<summary>
-oadd control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PhilanthroPortal.neworga.Panel4">
-	<summary>
-Panel4 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PhilanthroPortal.neworga.opin">
-	<summary>
-opin control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PhilanthroPortal.neworga.Panel21">
-	<summary>
-Panel21 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PhilanthroPortal.neworga.ddlstate">
-	<summary>
-ddlstate control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PhilanthroPortal.neworga.Panel5">
-	<summary>
-Panel5 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PhilanthroPortal.neworga.ddldist">
-	<summary>
-ddldist control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PhilanthroPortal.neworga.Panel6">
-	<summary>
-Panel6 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PhilanthroPortal.neworga.ddlcity">
-	<summary>
-ddlcity control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PhilanthroPortal.neworga.Panel8">
-	<summary>
-Panel8 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PhilanthroPortal.neworga.oacc">
-	<summary>
-oacc control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PhilanthroPortal.neworga.Panel7">
-	<summary>
-Panel7 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PhilanthroPortal.neworga.ongo">
-	<summary>
-ongo control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PhilanthroPortal.neworga.Panel15">
-	<summary>
-Panel15 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PhilanthroPortal.neworga.ophone">
-	<summary>
-ophone control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PhilanthroPortal.neworga.Panel9">
-	<summary>
-Panel9 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PhilanthroPortal.neworga.oemail">
-	<summary>
-oemail control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PhilanthroPortal.neworga.Panel10">
-	<summary>
-Panel10 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PhilanthroPortal.neworga.opass">
-	<summary>
-opass control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PhilanthroPortal.neworga.Panel16">
-	<summary>
-Panel16 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PhilanthroPortal.neworga.BtnORegister">
-	<summary>
-BtnORegister control.
+GVCV control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -990,6 +494,30 @@ ContentPlaceHolder1 control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
+</member><member name="F:PhilanthroPortal.donate.form1">
+	<summary>
+form1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.donate.CustomerButton">
+	<summary>
+CustomerButton control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.donate.ProviderButton">
+	<summary>
+ProviderButton control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
 </member><member name="F:PhilanthroPortal.dontoorg.ddorpay">
 	<summary>
 ddorpay control.
@@ -1014,9 +542,9 @@ dtodate control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:PhilanthroPortal.dontoorg.Btndoorg">
+</member><member name="F:PhilanthroPortal.dontoorg.orgpay">
 	<summary>
-Btndoorg control.
+orgpay control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -1198,6 +726,254 @@ Button1 control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
+</member><member name="F:PhilanthroPortal.newind.form1">
+	<summary>
+form1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.newind.ScriptManager1">
+	<summary>
+ScriptManager1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.newind.Panel1">
+	<summary>
+Panel1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.newind.ilname">
+	<summary>
+ilname control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.newind.Panel2">
+	<summary>
+Panel2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.newind.iaddress">
+	<summary>
+iaddress control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.newind.Panel3">
+	<summary>
+Panel3 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.newind.ipin">
+	<summary>
+ipin control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.newind.Panel21">
+	<summary>
+Panel21 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.newind.ddst">
+	<summary>
+ddst control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.newind.Panel5">
+	<summary>
+Panel5 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.newind.ddds">
+	<summary>
+ddds control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.newind.Panel6">
+	<summary>
+Panel6 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.newind.ddci">
+	<summary>
+ddci control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.newind.Panel8">
+	<summary>
+Panel8 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.newind.iacc">
+	<summary>
+iacc control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.newind.Panel20">
+	<summary>
+Panel20 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.newind.ipan">
+	<summary>
+ipan control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.newind.Panel4">
+	<summary>
+Panel4 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.newind.icond">
+	<summary>
+icond control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.newind.Panel15">
+	<summary>
+Panel15 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.newind.iphone">
+	<summary>
+iphone control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.newind.Panel9">
+	<summary>
+Panel9 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.newind.iemail">
+	<summary>
+iemail control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.newind.Panel10">
+	<summary>
+Panel10 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.newind.ipass">
+	<summary>
+ipass control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.newind.Panel11">
+	<summary>
+Panel11 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.newind.UploadImages">
+	<summary>
+UploadImages control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.newind.listofuploadedfiles">
+	<summary>
+listofuploadedfiles control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.newind.Panel16">
+	<summary>
+Panel16 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.newind.BtnIRegister">
+	<summary>
+BtnIRegister control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
 </member><member name="F:PhilanthroPortal.organization.oname">
 	<summary>
 oname control.
@@ -1310,25 +1086,265 @@ gvorg control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:PhilanthroPortal.dontoind.ddluser">
+</member><member name="F:PhilanthroPortal.neworga.form1">
 	<summary>
-ddluser control.
+form1 control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:PhilanthroPortal.dontoind.txtdo">
+</member><member name="F:PhilanthroPortal.neworga.ScriptManager1">
 	<summary>
-txtdo control.
+ScriptManager1 control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:PhilanthroPortal.dontoind.dindividual">
+</member><member name="F:PhilanthroPortal.neworga.Panel1">
 	<summary>
-dindividual control.
+Panel1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.neworga.oname">
+	<summary>
+oname control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.neworga.Panel2">
+	<summary>
+Panel2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.neworga.omission">
+	<summary>
+omission control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.neworga.Panel3">
+	<summary>
+Panel3 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.neworga.oadd">
+	<summary>
+oadd control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.neworga.Panel4">
+	<summary>
+Panel4 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.neworga.opin">
+	<summary>
+opin control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.neworga.Panel21">
+	<summary>
+Panel21 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.neworga.ddlstate">
+	<summary>
+ddlstate control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.neworga.Panel5">
+	<summary>
+Panel5 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.neworga.ddldist">
+	<summary>
+ddldist control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.neworga.Panel6">
+	<summary>
+Panel6 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.neworga.ddlcity">
+	<summary>
+ddlcity control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.neworga.Panel8">
+	<summary>
+Panel8 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.neworga.oacc">
+	<summary>
+oacc control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.neworga.Panel7">
+	<summary>
+Panel7 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.neworga.ongo">
+	<summary>
+ongo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.neworga.Panel15">
+	<summary>
+Panel15 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.neworga.ophone">
+	<summary>
+ophone control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.neworga.Panel9">
+	<summary>
+Panel9 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.neworga.oemail">
+	<summary>
+oemail control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.neworga.Panel10">
+	<summary>
+Panel10 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.neworga.opass">
+	<summary>
+opass control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.neworga.Panel11">
+	<summary>
+Panel11 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.neworga.docorg">
+	<summary>
+docorg control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.neworga.listofuploaded">
+	<summary>
+listofuploaded control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.neworga.Panel16">
+	<summary>
+Panel16 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.neworga.BtnORegister">
+	<summary>
+BtnORegister control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.dontoind.txtuser">
+	<summary>
+txtuser control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.dontoind.txtind">
+	<summary>
+txtind control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -1350,9 +1366,9 @@ dtidate control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:PhilanthroPortal.dontoind.Button1">
+</member><member name="F:PhilanthroPortal.dontoind.indpay">
 	<summary>
-Button1 control.
+indpay control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -1514,6 +1530,38 @@ To modify move field declaration from designer file to code-behind file.
 </member><member name="F:PhilanthroPortal.Site3.ContentPlaceHolder1">
 	<summary>
 ContentPlaceHolder1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.supportnew.form1">
+	<summary>
+form1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.supportnew.UploadImages">
+	<summary>
+UploadImages control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.supportnew.uploadedFile">
+	<summary>
+uploadedFile control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.supportnew.listofuploadedfiles">
+	<summary>
+listofuploadedfiles control.
 </summary>
 	<remarks>
 Auto-generated field.

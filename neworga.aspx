@@ -463,6 +463,11 @@
                             <asp:TextBox runat="server" ID="opass" TextMode="Password" placeholder="Password" CssClass="form-item" />
                             <small class="errorReq"><i class="fa fa-asterisk" aria-hidden="true"></i> required field</small>
                         </asp:Panel>
+                         <asp:Panel ID="Panel11" runat="server" CssClass="form-item">
+                             <asp:FileUpload runat="server" ID="docorg" AllowMultiple="true" />  
+                            
+                              <asp:Label ID="listofuploaded" runat="server" /> 
+                          </asp:Panel>
                          <asp:Panel ID="Panel16" runat="server" CssClass="form-item">
                             <asp:Button runat="server" ID="BtnORegister" Text="Submit" CssClass="submit" />
                         </asp:Panel>

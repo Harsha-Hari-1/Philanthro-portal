@@ -248,6 +248,33 @@ Partial Public Class neworga
     Protected WithEvents opass As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
+    '''Panel11 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents Panel11 As Global.System.Web.UI.WebControls.Panel
+
+    '''<summary>
+    '''docorg control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents docorg As Global.System.Web.UI.WebControls.FileUpload
+
+    '''<summary>
+    '''listofuploaded control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents listofuploaded As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
     '''Panel16 control.
     '''</summary>
     '''<remarks>

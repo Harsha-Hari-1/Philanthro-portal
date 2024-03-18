@@ -12,7 +12,7 @@ Public Class dontoorg
         End If
     End Sub
 
-    Protected Sub Button1_Click(sender As Object, e As EventArgs) Handles Btndoorg.Click
+    Protected Sub Button1_Click(sender As Object, e As EventArgs) Handles orgpay.Click
         Dim instr As String
         instr = "Insert INTO dontoorg(org_id,amount,date) Values(" + ddorpay.SelectedValue + ",'" + dtoamt.Text + "','" + dtodate.Text + "')"
         Dim cmdo As SqlCommand = New SqlCommand(instr, con.connect())

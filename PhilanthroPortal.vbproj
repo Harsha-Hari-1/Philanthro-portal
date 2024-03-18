@@ -86,6 +86,7 @@
     <Content Include="Dist.aspx" />
     <Content Include="Donar.aspx" />
     <Content Include="donar2.aspx" />
+    <Content Include="donate.aspx" />
     <Content Include="dontoind.aspx" />
     <Content Include="dontoorg.aspx" />
     <Content Include="forgotpass.aspx" />
@@ -138,6 +139,8 @@
     <Content Include="Support.aspx" />
     <Content Include="supportnew.aspx" />
     <Content Include="type.aspx" />
+    <Content Include="viewind.aspx" />
+    <Content Include="vieworg.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -168,6 +171,13 @@
     </Compile>
     <Compile Include="donar2.aspx.vb">
       <DependentUpon>donar2.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="donate.aspx.designer.vb">
+      <DependentUpon>donate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="donate.aspx.vb">
+      <DependentUpon>donate.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="dontoind.aspx.designer.vb">
@@ -341,6 +351,20 @@
     </Compile>
     <Compile Include="type.aspx.vb">
       <DependentUpon>type.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="viewind.aspx.designer.vb">
+      <DependentUpon>viewind.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="viewind.aspx.vb">
+      <DependentUpon>viewind.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="vieworg.aspx.designer.vb">
+      <DependentUpon>vieworg.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vieworg.aspx.vb">
+      <DependentUpon>vieworg.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
   </ItemGroup>

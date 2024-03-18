@@ -16,10 +16,18 @@ Public Class loginsam
             Dim ds As DataTable = New DataTable
             sqldaC.Fill(ds)
             If ds.Rows.Count > 0 Then
+                Dim user_id As String = ds.Rows(0)(0).ToString()
+                Session("user_id") = user_id
                 Response.Redirect("donar2.aspx")
             Else
                 Response.Write("<script>alert('Invalid Email or Password');</script>")
             End If
+
+            'If ds.Rows.Count > 0 Then
+            '    Response.Redirect("donar2.aspx")
+            'Else
+            '    Response.Write("<script>alert('Invalid Email or Password');</script>")
+            'End If
         ElseIf rborg.Checked = True Then
             Dim str As String
             str = "SELECT * FROM  organization WHERE Email = '" + etext.Text + "' AND Password = '" + utext.Text + "' "
@@ -41,11 +49,18 @@ Public Class loginsam
             Dim dsp As DataTable = New DataTable
             sqlda.Fill(dsp)
             If dsp.Rows.Count > 0 Then
+                Dim user_id As String = dsp.Rows(0)(0).ToString()
+                Session("user_id") = user_id
                 Response.Redirect("ind2.aspx")
             Else
                 Response.Write("<script>alert('Invalid Email or Password');</script>")
-
             End If
+            'If dsp.Rows.Count > 0 Then
+            '    Response.Redirect("ind2.aspx")
+            'Else
+            '    Response.Write("<script>alert('Invalid Email or Password');</script>")
+
+            'End If
         End If
     End Sub
 
