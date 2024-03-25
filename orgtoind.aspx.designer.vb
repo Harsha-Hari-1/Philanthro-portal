@@ -11,41 +11,41 @@ Option Strict On
 Option Explicit On
 
 
-Partial Public Class supportnew
+Partial Public Class WebForm1
 
     '''<summary>
-    '''form1 control.
+    '''otiind control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents form1 As Global.System.Web.UI.HtmlControls.HtmlForm
+    Protected WithEvents otiind As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''UploadImages control.
+    '''otiamt control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents UploadImages As Global.System.Web.UI.WebControls.FileUpload
+    Protected WithEvents otiamt As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''uploadedFile control.
+    '''otidate control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents uploadedFile As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents otidate As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''listofuploadedfiles control.
+    '''orginpay control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents listofuploadedfiles As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents orginpay As Global.System.Web.UI.WebControls.Button
 End Class

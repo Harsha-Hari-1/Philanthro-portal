@@ -4,8 +4,9 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
    
-        <asp:GridView ID="GVCV" runat="server" AllowPaging="True" CellPadding="4" ForeColor="#333333" GridLines="None" PageIndex="4" PageSize="5" AutoGenerateColumns="False">
+        <asp:GridView ID="GVCV" runat="server" AllowPaging="True" CellPadding="4" ForeColor="#333333" GridLines="None" PageIndex="4" PageSize="5" AutoGenerateColumns="False" HorizontalAlign="Center" OnRowCommand="GVCV_RowCommand" DataKeyNames="org_id">
              <Columns>
+                 <asp:BoundField DataField="org_id" HeaderText="ID" />
             <asp:BoundField DataField="org_name" HeaderText="Organization Name">
             <ItemStyle HorizontalAlign="Center" />
             </asp:BoundField>
@@ -22,8 +23,8 @@
             <asp:BoundField DataField="account" HeaderText="Account No">
             <ItemStyle HorizontalAlign="Center" />
             </asp:BoundField>
-            <asp:ButtonField ButtonType="Button"
-            Text="Donate" >
+                 <asp:BoundField DataField="phn_no" HeaderText="Contact No" />
+            <asp:ButtonField ButtonType="Button" Text="Donate" CommandName="Donate">
             <ItemStyle HorizontalAlign="Center" />
             </asp:ButtonField>
         </Columns>

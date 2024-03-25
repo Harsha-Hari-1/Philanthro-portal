@@ -23,11 +23,7 @@ Public Class loginsam
                 Response.Write("<script>alert('Invalid Email or Password');</script>")
             End If
 
-            'If ds.Rows.Count > 0 Then
-            '    Response.Redirect("donar2.aspx")
-            'Else
-            '    Response.Write("<script>alert('Invalid Email or Password');</script>")
-            'End If
+            
         ElseIf rborg.Checked = True Then
             Dim str As String
             str = "SELECT * FROM  organization WHERE Email = '" + etext.Text + "' AND Password = '" + utext.Text + "' "
@@ -36,6 +32,8 @@ Public Class loginsam
             Dim dsp As DataTable = New DataTable
             sqlda.Fill(dsp)
             If dsp.Rows.Count > 0 Then
+                Dim orgid As String = dsp.Rows(0)(0).ToString()
+                Session("org_id") = orgid
                 Response.Redirect("org2.aspx")
             Else
                 Response.Write("<script>alert('Invalid Email or Password');</script>")
@@ -49,18 +47,13 @@ Public Class loginsam
             Dim dsp As DataTable = New DataTable
             sqlda.Fill(dsp)
             If dsp.Rows.Count > 0 Then
-                Dim user_id As String = dsp.Rows(0)(0).ToString()
-                Session("user_id") = user_id
+                Dim reg_id As String = dsp.Rows(0)(0).ToString()
+                Session("reg_id") = reg_id
                 Response.Redirect("ind2.aspx")
             Else
                 Response.Write("<script>alert('Invalid Email or Password');</script>")
             End If
-            'If dsp.Rows.Count > 0 Then
-            '    Response.Redirect("ind2.aspx")
-            'Else
-            '    Response.Write("<script>alert('Invalid Email or Password');</script>")
-
-            'End If
+           
         End If
     End Sub
 

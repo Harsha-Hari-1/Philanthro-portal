@@ -1,8 +1,8 @@
-﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Site2.Master" CodeBehind="viewind.aspx.vb" Inherits="PhilanthroPortal.viewind" %>
+﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Site3.Master" CodeBehind="orgdonate.aspx.vb" Inherits="PhilanthroPortal.orgdonate" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <asp:GridView ID="gd1" runat="server" AllowPaging="True" BackColor="White" BorderColor="#CC9966" BorderStyle="None" BorderWidth="1px" CellPadding="4" PageIndex="3" AutoGenerateColumns="False" HorizontalAlign="Center" OnRowCommand="gd1_RowCommand" DataKeyNames="reg_id" SelectedIndex="1">
+    <asp:GridView ID="gd2" runat="server" AllowPaging="True" BackColor="White" BorderColor="#CC9966" BorderStyle="None" BorderWidth="1px" CellPadding="4" PageIndex="3" AutoGenerateColumns="False" HorizontalAlign="Center" OnRowCommand="gd2_RowCommand" DataKeyNames="reg_id" SelectedIndex="1">
         <Columns>
             <asp:BoundField DataField="reg_id" HeaderText="Ind Id" />
             <asp:BoundField DataField="iname" HeaderText="Individual Name">
@@ -21,7 +21,7 @@
             <ItemStyle HorizontalAlign="Center" />
             </asp:BoundField>
             <asp:BoundField DataField="phn" HeaderText="Contact No" />
-            <asp:ButtonField ButtonType="Button" Text="Donate" CommandName="DontoInd">
+            <asp:ButtonField ButtonType="Button" Text="Donate" CommandName="orgtoind">
             
             <ItemStyle HorizontalAlign="Center" />
             </asp:ButtonField>

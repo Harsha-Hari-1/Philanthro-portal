@@ -58,7 +58,7 @@
 <body>
     <form id="form1" runat="server">
       <div id="container">
-            <div class="heading">Choose your role</div>
+            <div class="heading">Choose your donation</div>
         </div>
         <div class="card-container">
             <div class="card">

@@ -6,17 +6,225 @@ PhilanthroPortal
 </name>
 </assembly>
 <members>
-<member name="F:PhilanthroPortal.viewind.gd1">
+<member name="F:PhilanthroPortal.profileind.Head1">
 	<summary>
-gd1 control.
+Head1 control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:PhilanthroPortal.vieworg.GVCV">
+</member><member name="F:PhilanthroPortal.profileind.form1">
 	<summary>
-GVCV control.
+form1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.profileind.induser">
+	<summary>
+induser control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.profileind.indname">
+	<summary>
+indname control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.profileind.cont">
+	<summary>
+cont control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.profileind.address">
+	<summary>
+address control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.profileind.pin">
+	<summary>
+pin control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.profileind.pan">
+	<summary>
+pan control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.profileind.acc1">
+	<summary>
+acc1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.profileind.number">
+	<summary>
+number control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.profileorg.Head1">
+	<summary>
+Head1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.profileorg.form1">
+	<summary>
+form1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.profileorg.orguser">
+	<summary>
+orguser control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.profileorg.orgname">
+	<summary>
+orgname control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.profileorg.vis">
+	<summary>
+vis control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.profileorg.address">
+	<summary>
+address control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.profileorg.pin">
+	<summary>
+pin control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.profileorg.ngo">
+	<summary>
+ngo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.profileorg.acc">
+	<summary>
+acc control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.profileorg.number">
+	<summary>
+number control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.profile.Head1">
+	<summary>
+Head1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.profile.form1">
+	<summary>
+form1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.profile.user">
+	<summary>
+user control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.profile.name">
+	<summary>
+name control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.profile.address">
+	<summary>
+address control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.profile.pin">
+	<summary>
+pin control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.profile.pan">
+	<summary>
+pan control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.profile.number">
+	<summary>
+number control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -137,6 +345,14 @@ To modify move field declaration from designer file to code-behind file.
 </member><member name="F:PhilanthroPortal.individuals.gvind">
 	<summary>
 gvind control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.viewind.gd1">
+	<summary>
+gd1 control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -518,9 +734,9 @@ ProviderButton control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:PhilanthroPortal.dontoorg.ddorpay">
+</member><member name="F:PhilanthroPortal.dontoorg.txtorg">
 	<summary>
-ddorpay control.
+txtorg control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -577,6 +793,38 @@ To modify move field declaration from designer file to code-behind file.
 </member><member name="F:PhilanthroPortal.city.Button1">
 	<summary>
 Button1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.WebForm1.otiind">
+	<summary>
+otiind control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.WebForm1.otiamt">
+	<summary>
+otiamt control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.WebForm1.otidate">
+	<summary>
+otidate control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.WebForm1.orginpay">
+	<summary>
+orginpay control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -673,6 +921,14 @@ To modify move field declaration from designer file to code-behind file.
 </member><member name="F:PhilanthroPortal.Donar.gvd">
 	<summary>
 gvd control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.orgdonate.gd2">
+	<summary>
+gd2 control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -1334,9 +1590,9 @@ BtnORegister control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:PhilanthroPortal.dontoind.txtuser">
+</member><member name="F:PhilanthroPortal.vieworg.GVCV">
 	<summary>
-txtuser control.
+GVCV control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -1530,38 +1786,6 @@ To modify move field declaration from designer file to code-behind file.
 </member><member name="F:PhilanthroPortal.Site3.ContentPlaceHolder1">
 	<summary>
 ContentPlaceHolder1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PhilanthroPortal.supportnew.form1">
-	<summary>
-form1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PhilanthroPortal.supportnew.UploadImages">
-	<summary>
-UploadImages control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PhilanthroPortal.supportnew.uploadedFile">
-	<summary>
-uploadedFile control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PhilanthroPortal.supportnew.listofuploadedfiles">
-	<summary>
-listofuploadedfiles control.
 </summary>
 	<remarks>
 Auto-generated field.

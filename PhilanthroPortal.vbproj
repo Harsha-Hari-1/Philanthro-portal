@@ -134,14 +134,18 @@
     <Content Include="neworga.aspx" />
     <Content Include="org2.aspx" />
     <Content Include="organization.aspx" />
+    <Content Include="orgdonate.aspx" />
+    <Content Include="profile.aspx" />
+    <Content Include="profileind.aspx" />
+    <Content Include="profileorg.aspx" />
     <Content Include="Register.aspx" />
     <Content Include="State.aspx" />
     <Content Include="Support.aspx" />
-    <Content Include="supportnew.aspx" />
     <Content Include="type.aspx" />
     <Content Include="viewind.aspx" />
     <Content Include="vieworg.aspx" />
     <Content Include="Web.config" />
+    <Content Include="orgtoind.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="city.aspx.designer.vb">
@@ -290,6 +294,34 @@
       <DependentUpon>organization.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
+    <Compile Include="orgdonate.aspx.designer.vb">
+      <DependentUpon>orgdonate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="orgdonate.aspx.vb">
+      <DependentUpon>orgdonate.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="profile.aspx.designer.vb">
+      <DependentUpon>profile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="profile.aspx.vb">
+      <DependentUpon>profile.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="profileind.aspx.designer.vb">
+      <DependentUpon>profileind.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="profileind.aspx.vb">
+      <DependentUpon>profileind.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="profileorg.aspx.designer.vb">
+      <DependentUpon>profileorg.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="profileorg.aspx.vb">
+      <DependentUpon>profileorg.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="Register.aspx.designer.vb">
       <DependentUpon>Register.aspx</DependentUpon>
     </Compile>
@@ -339,13 +371,6 @@
       <DependentUpon>Support.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
-    <Compile Include="supportnew.aspx.designer.vb">
-      <DependentUpon>supportnew.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="supportnew.aspx.vb">
-      <DependentUpon>supportnew.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
-    </Compile>
     <Compile Include="type.aspx.designer.vb">
       <DependentUpon>type.aspx</DependentUpon>
     </Compile>
@@ -365,6 +390,13 @@
     </Compile>
     <Compile Include="vieworg.aspx.vb">
       <DependentUpon>vieworg.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="orgtoind.aspx.designer.vb">
+      <DependentUpon>orgtoind.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="orgtoind.aspx.vb">
+      <DependentUpon>orgtoind.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
   </ItemGroup>

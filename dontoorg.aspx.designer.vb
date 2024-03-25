@@ -14,13 +14,13 @@ Option Explicit On
 Partial Public Class dontoorg
 
     '''<summary>
-    '''ddorpay control.
+    '''txtorg control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents ddorpay As Global.System.Web.UI.WebControls.DropDownList
+    Protected WithEvents txtorg As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
     '''dtoamt control.

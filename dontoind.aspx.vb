@@ -4,22 +4,17 @@ Public Class dontoind
     Inherits System.Web.UI.Page
     Dim con As philanthro = New philanthro
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
-        'If Not Me.IsPostBack Then
-        '    type()
-        'End If
-        'If Not Me.IsPostBack Then
-        '    donar()
-        'End If
-        'If Not Me.IsPostBack Then
-        '    ind()
-        'End If
+        Dim dataValue As String = Session("selectedname").ToString()
+        txtind.Text = Session("selectedname")
     End Sub
 
     Protected Sub Button1_Click(sender As Object, e As EventArgs) Handles indpay.Click
 
         Dim instr As String
-        instr = "Insert INTO dontoind(user_id,reg_id,amount,date) Values(" + txtuser.Text + "," + txtind.Text + ",'" + dtiamt.Text + "','" + dtidate.Text + "')"
+        instr = "Insert INTO dontoind(reg_id,amount,date,donate_by) Values(" + Session("selectedvalue").ToString + ",'" + dtiamt.Text + "','" + dtidate.Text + "'," + Session("user_id").ToString + ")"
         Dim cmdo As SqlCommand = New SqlCommand(instr, con.connect())
+        Dim dataValue As String = Request.QueryString("dataKey")
+        'Dim selectedData As String = Session("SelectedData")
         cmdo.ExecuteNonQuery()
         Response.Write("<script>alert('Data saved');</script>")
     End Sub

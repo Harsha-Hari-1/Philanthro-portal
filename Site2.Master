@@ -50,7 +50,8 @@
                             <a href="donate.aspx" class="nav-item nav-link" >Donate</a>
                        
                         <a href="contact.html" class="nav-item nav-link">Contact</a>
-                        <a href="login.aspx" class="nav-item nav-link">Logout</a>
+                        <a href="profile.aspx" class="nav-item nav-link">Profile</a>
+                       
                     </div>
                 </div>
             </div>

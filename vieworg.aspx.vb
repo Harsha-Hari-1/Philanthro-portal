@@ -12,9 +12,10 @@ Public Class vieworg
             Dim sqldaC As SqlDataAdapter = New SqlDataAdapter(com)
             Dim ds As DataTable = New DataTable
             sqldaC.Fill(ds)
+           
             Dim ap As DataTable = New DataTable
             Dim str As String
-            str = "select org_name,mission,address,ngo_no,phn_no,account from organization"
+            str = "select org_id,org_name,mission,address,ngo_no,phn_no,account from organization"
             Dim cmd As SqlCommand = New SqlCommand(str, co.connect())
             Dim ad As SqlDataAdapter = New SqlDataAdapter(cmd)
             ad.Fill(ap)
@@ -26,4 +27,20 @@ Public Class vieworg
         GVCV.PageIndex = e.NewPageIndex
     End Sub
 
+    
+    
+    Protected Sub GVCV_RowCommand(ByVal sender As Object, ByVal e As GridViewCommandEventArgs) Handles GVCV.RowCommand
+
+        If e.CommandName = "Donate" Then
+            Dim rowIndex As Integer = Convert.ToInt32(e.CommandArgument)
+            Dim id As Integer = Convert.ToInt64(GVCV.DataKeys(rowIndex).Value)
+            Dim name As String = GVCV.Rows(rowIndex).Cells(1).Text
+            Dim ngo As String = GVCV.Rows(rowIndex).Cells(4).Text
+            Session("selectedvalue") = id
+            Session("selectedname") = name
+            Response.Redirect("dontoorg.aspx")
+        End If
+
+        
+    End Sub
 End Class

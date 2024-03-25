@@ -27,11 +27,8 @@
             </tr>
             <tr>
                 <td class="auto-style1" style="color:black;">Organization Name</td>
-                <td>
-                    <asp:DropDownList ID="ddorpay" runat="server" Width="170px">
-                    </asp:DropDownList>
-                </td>
-                <td>&nbsp;</td>
+                <td><asp:TextBox ID="txtorg" runat="server" Enabled="False"></asp:TextBox></td>
+                
             </tr>
             <tr>
                 <td class="auto-style1" style="color:black;">Amount</td>

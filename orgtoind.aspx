@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Site1.Master" CodeBehind="dontoind.aspx.vb" Inherits="PhilanthroPortal.dontoind" %>
+﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Site3.Master" CodeBehind="orgtoind.aspx.vb" Inherits="PhilanthroPortal.WebForm1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style type="text/css">
         .auto-style1 {
@@ -40,27 +40,27 @@
             <tr>
                 <td class="auto-style1" style="color:black;">Individual Name</td>
                 <td>
-                    <asp:TextBox ID="txtind" runat="server" Enabled="False"></asp:TextBox>
+                    <asp:TextBox ID="otiind" runat="server" Enabled="False"></asp:TextBox>
                 </td>
                 <td>&nbsp;</td>
             </tr>
             <tr>
                 <td class="auto-style1"style="color:black;">Amount</td>
                 <td>
-                    <asp:TextBox ID="dtiamt" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="otiamt" runat="server"></asp:TextBox>
                 </td>
                 <td>&nbsp;</td>
             </tr>
             <tr>
                 <td class="auto-style1" style="color:black;">Date</td>
                 <td>
-                    <asp:TextBox ID="dtidate" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="otidate" runat="server"></asp:TextBox>
                 </td>
                 <td>&nbsp;</td>
             </tr>
             <tr>
                 <td>
-                    <asp:Button ID="indpay" runat="server" Text="Pay" style="height: 29px" align="center" />
+                    <asp:Button ID="orginpay" runat="server" Text="Pay" style="height: 29px" align="center" />
                 </td>
                 <td>&nbsp;</td>
             </tr>
