@@ -1,6 +1,6 @@
 ﻿Imports System.Data.SqlClient
 Imports System.Data
-Public Class vieworg
+Public Class vieworgrequest
     Inherits System.Web.UI.Page
     Dim co As philanthro = New philanthro
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
@@ -12,45 +12,35 @@ Public Class vieworg
             Dim sqldaC As SqlDataAdapter = New SqlDataAdapter(com)
             Dim ds As DataTable = New DataTable
             sqldaC.Fill(ds)
-           
             Dim ap As DataTable = New DataTable
             Dim str As String
-            str = "select org_id,org_name,mission,address,ngo_no,phn_no,account from organization"
+            str = "select org_id,org_name,details,amount from org_post"
             Dim cmd As SqlCommand = New SqlCommand(str, co.connect())
             Dim ad As SqlDataAdapter = New SqlDataAdapter(cmd)
             ad.Fill(ap)
-            GVCV.DataSource = ap
-            GVCV.DataBind()
+            gvrequest.DataSource = ap
+            gvrequest.DataBind()
         End If
-    End Sub
-    Protected Sub GVCV_PageIndexChanging(sender As Object, e As GridViewPageEventArgs) Handles GVCV.PageIndexChanging
-        GVCV.PageIndex = e.NewPageIndex
-        'Me.BindGrid()
+
     End Sub
 
-    
-    
-    Protected Sub GVCV_RowCommand(ByVal sender As Object, ByVal e As GridViewCommandEventArgs) Handles GVCV.RowCommand
+    Protected Sub gvrequest_SelectedIndexChanged(sender As Object, e As EventArgs) Handles gvrequest.SelectedIndexChanged
 
-        'If Session("selectedvalue") == org_id Then
+    End Sub
 
-        'End If
+    Protected Sub gvrequest_PageIndexChanging(sender As Object, e As GridViewPageEventArgs) Handles gvrequest.PageIndexChanging
+        gvrequest.PageIndex = e.NewPageIndex
+    End Sub
 
-        If e.CommandName = "Requests" Then
+    Protected Sub gvrequest_RowCommand(sender As Object, e As GridViewCommandEventArgs) Handles gvrequest.RowCommand
+        If e.CommandName = "Donate" Then
             Dim rowIndex As Integer = Convert.ToInt32(e.CommandArgument)
-            Dim id As Integer = Convert.ToInt64(GVCV.DataKeys(rowIndex).Value)
-            Dim name As String = GVCV.Rows(rowIndex).Cells(1).Text
-            Dim ngo As String = GVCV.Rows(rowIndex).Cells(4).Text
+            Dim id As Integer = Convert.ToInt64(gvrequest.DataKeys(rowIndex).Value)
+            Dim name As String = gvrequest.Rows(rowIndex).Cells(1).Text
+            Dim ngo As String = gvrequest.Rows(rowIndex).Cells(4).Text
             Session("selectedvalue") = id
             Session("selectedname") = name
-            Response.Redirect("vieworgrequest.aspx")
+            Response.Redirect("dontoorg.aspx")
         End If
-
-
     End Sub
-
-    'Private Sub BindGrid()
-    '    Throw New NotImplementedException
-    'End Sub
-
 End Class

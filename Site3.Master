@@ -44,9 +44,8 @@
                         <a href="#" class="nav-item nav-link active">Home</a>
                         <a href="#" class="nav-item nav-link">About</a>
                         <a href="#" class="nav-item nav-link">Causes</a>
-                        <a href="#" class="nav-item nav-link">New Post</a>
+                       
                         <a href="orgdonate.aspx" class="nav-item nav-link">Donate</a>
-                        <a href="mfund.aspx" class="nav-item nav-link">Fund Analysis</a>
                         <a href="contact.html" class="nav-item nav-link">Contact</a>
                         <a href="profileorg.aspx" class="nav-item nav-link">Profile</a>
                     </div>
@@ -172,7 +171,7 @@
         <!-- About End -->--%>
 
 
-    <!-- Service Start -->
+   <%-- <!-- Service Start -->
         <div class="service">
             <div class="container">
                 <div class="section-header text-center">
@@ -249,7 +248,7 @@
                 </div>
             </div>
         </div>
-        <!-- Service End -->
+        <!-- Service End -->--%>
     <%-- <!-- Facts Start -->
         <div class="facts" data-parallax="scroll" data-image-src="img/facts.jpg">
             <div class="container">

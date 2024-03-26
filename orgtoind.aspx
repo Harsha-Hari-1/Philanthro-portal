@@ -4,14 +4,19 @@
         .auto-style1 {
             width: 250px;
         }
-         .main {
-            background-color:grey;
-            text-decoration:black;
-            width:75%;
+        .main {
+            background-color: grey;
+            text-decoration: black;
+            width: 75%;
+        }
+        .bgimg {
+            background-image:url("img/carousel-2.jpg");
+        }
 
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <div class="bgimg">
     <p>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Donation To Individuals</p>
     <div class="main"><table style="width:100%;">
@@ -66,5 +71,5 @@
             </tr>
         </table>
     </div>
-        
-</asp:Content>
+    </div>
+        </asp:Content>

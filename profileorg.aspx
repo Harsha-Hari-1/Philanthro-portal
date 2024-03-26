@@ -122,7 +122,8 @@
                 <br />
                 <br />
                 <a href="org2.aspx">&nbsp;&nbsp;&nbsp;&nbsp;Profile</a>
-              
+                <a href="mfund.aspx" class="nav-item nav-link">Fund Analysis</a>
+                <a href="newpostorg.aspx" class="nav-item nav-link">New Post</a>
                 <a href="login.aspx">&nbsp;&nbsp;&nbsp;&nbsp;Logout</a>
             </div>
 

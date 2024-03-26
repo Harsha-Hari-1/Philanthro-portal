@@ -4,6 +4,7 @@ Public Class profileorg
     Inherits System.Web.UI.Page
     Dim co As philanthro = New philanthro
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
+
         If Not IsPostBack Then
             Dim loggedInUser As String = Session("org_id")
             If Not String.IsNullOrEmpty(loggedInUser) Then
@@ -14,8 +15,10 @@ Public Class profileorg
 
                     Using reader As SqlDataReader = cmd.ExecuteReader()
                         If reader.Read() Then
+
                             orguser.Text = reader("email").ToString()
                             orgname.Text = reader("org_name").ToString()
+                            Session("org_name") = reader("org_name").ToString()
                             vis.Text = reader("mission").ToString()
                             address.Text = reader("address").ToString()
                             pin.Text = reader("pincode").ToString()

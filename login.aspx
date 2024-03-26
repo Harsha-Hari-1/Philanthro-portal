@@ -24,11 +24,16 @@ body {
 }
 body {
   font-family: 'Roboto', sans-serif;
-  background: -webkit-linear-gradient(45deg, rgba(4, 2, 96, 0.7), rgba(180, 49, 183, 0.9)), -webkit-linear-gradient(0deg, rgba(51, 136, 140, 0.3), rgba(87, 240, 240, 0.1));
+  background-image:url("img/causes-2.jpg");
+            background-repeat:no-repeat;
+  /*background: -webkit-linear-gradient(45deg, rgba(4, 2, 96, 0.7), rgba(180, 49, 183, 0.9)), -webkit-linear-gradient(0deg, rgba(51, 136, 140, 0.3), rgba(87, 240, 240, 0.1));
   background: -moz-linear-gradient(45deg, rgba(4, 2, 96, 0.7), rgba(180, 49, 183, 0.9)), -moz-linear-gradient(0deg, rgba(51, 136, 140, 0.3), rgba(87, 240, 240, 0.1));
   background: -o-linear-gradient(45deg, rgba(4, 2, 96, 0.7), rgba(180, 49, 183, 0.9)), -o-linear-gradient(0deg, rgba(51, 136, 140, 0.3), rgba(87, 240, 240, 0.1));
-  background: linear-gradient(45deg, rgba(4, 2, 96, 0.7), rgba(180, 49, 183, 0.9)), linear-gradient(90deg, rgba(51, 136, 140, 0.3), rgba(87, 240, 240, 0.1));
-  overflow: hidden;
+  background: linear-gradient(45deg, rgba(4, 2, 96, 0.7), rgba(180, 49, 183, 0.9)), linear-gradient(90deg, rgba(51, 136, 140, 0.3), rgba(87, 240, 240, 0.1));*/
+  overflow:inherit; 
+  max-width:inherit;
+  width:auto;
+  background-size:cover;
   
   
 }
@@ -172,7 +177,11 @@ body {
         .custom-input {
             color:white;
         }
-        
+        /*.logback {
+            background-image:url("img/event-1.jpg");
+            background-repeat:no-repeat;
+            width:100%;
+        }*/
     </style>
     <script>
         $(document).ready(function () {
@@ -185,11 +194,38 @@ body {
                     });
                 }
             });
+            //$('#show_password').hover(function show() {
+            //    //Change the attribute to text  
+            //    $('#txtPassword').attr('type', 'text');
+            //    $('.icon').removeClass('fa fa-eye-slash').addClass('fa fa-eye');
+            //},
+            //function () {
+            //    //Change the attribute back to password  
+            //    $('#txtPassword').attr('type', 'password');
+            //    $('.icon').removeClass('fa fa-eye').addClass('fa fa-eye-slash');
+            //});
+        });
+        //$(document).ready(function () {
+        //    $('#show_password').hover(function show() {
+        //        //Change the attribute to text  
+        //        $('#txtPassword').attr('type', 'text');
+        //        $('.icon').removeClass('fa fa-eye-slash').addClass('fa fa-eye');
+        //    },
+        //    function () {
+        //        //Change the attribute back to password  
+        //        $('#txtPassword').attr('type', 'password');
+        //        $('.icon').removeClass('fa fa-eye').addClass('fa fa-eye-slash');
+        //    });
+            ////CheckBox Show Password  
+            //$('#ShowPassword').click(function () {
+            //    $('#Password').attr('type', $(this).is(':checked') ? 'text' : 'password');
+            //});
         });
     </script>
 </head>
 <body>
     <form id="form1" runat="server">
+       
     <div class="panel">
 		<div class="state"><br/><i class="fa fa-unlock-alt"></i><br/><h1>Login</h1>
         </div>
@@ -204,11 +240,14 @@ body {
 		<div class="form">
             <div class="log">
                 Email
-			<asp:TextBox ID="etext" runat="server" Width="100%" AutoPostBack="True" class="custom-input"></asp:TextBox>
+			<asp:TextBox ID="etext" runat="server" Width="100%" AutoPostBack="True" class="custom-input"  Height="44px"></asp:TextBox>
             
                 Password
                 <br />
-                <asp:TextBox ID="utext" runat="server" Width="100%" AutoPostBack="True" class="custom-input"></asp:TextBox>
+                
+             <asp:TextBox ID="utext" runat="server"  Width="100%" AutoPostBack="True" class="custom-input"  Height="44px"></asp:TextBox>  
+                        
+                     
             </div>
             
 			<div class="login">
@@ -222,6 +261,7 @@ body {
             <asp:LinkButton ID="lbsigup" runat="server">Sigup</asp:LinkButton>
         </div>
 	</div>
+           
     </form>
 </body>
 </html>

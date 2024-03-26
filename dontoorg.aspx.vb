@@ -19,7 +19,8 @@ Public Class dontoorg
         Dim cmdo As SqlCommand = New SqlCommand(instr, con.connect())
 
         cmdo.ExecuteNonQuery()
-        Response.Write("<script>alert('data saved');</script>")
+        Response.Write("<script>alert('Data Saved');</script>")
+        Response.Redirect("payment.aspx")
         dtodate.Text = ""
 
     End Sub

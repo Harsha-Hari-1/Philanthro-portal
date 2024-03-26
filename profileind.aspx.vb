@@ -16,6 +16,7 @@ Public Class profileind
                         If reader.Read() Then
                             induser.Text = reader("email").ToString()
                             indname.Text = reader("iname").ToString()
+                            'Session("ind_name") = reader("iname").ToString()
                             cont.Text = reader("conttent").ToString()
                             address.Text = reader("address").ToString()
                             pin.Text = reader("pincode").ToString()

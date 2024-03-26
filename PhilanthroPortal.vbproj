@@ -132,9 +132,12 @@
     <Content Include="newdonar.aspx" />
     <Content Include="newind.aspx" />
     <Content Include="neworga.aspx" />
+    <Content Include="newpostind.aspx" />
+    <Content Include="newpostorg.aspx" />
     <Content Include="org2.aspx" />
     <Content Include="organization.aspx" />
     <Content Include="orgdonate.aspx" />
+    <Content Include="payment.aspx" />
     <Content Include="profile.aspx" />
     <Content Include="profileind.aspx" />
     <Content Include="profileorg.aspx" />
@@ -144,6 +147,7 @@
     <Content Include="type.aspx" />
     <Content Include="viewind.aspx" />
     <Content Include="vieworg.aspx" />
+    <Content Include="vieworgrequest.aspx" />
     <Content Include="Web.config" />
     <Content Include="orgtoind.aspx" />
   </ItemGroup>
@@ -280,6 +284,20 @@
       <DependentUpon>neworga.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
+    <Compile Include="newpostind.aspx.designer.vb">
+      <DependentUpon>newpostind.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="newpostind.aspx.vb">
+      <DependentUpon>newpostind.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="newpostorg.aspx.designer.vb">
+      <DependentUpon>newpostorg.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="newpostorg.aspx.vb">
+      <DependentUpon>newpostorg.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="org2.aspx.designer.vb">
       <DependentUpon>org2.aspx</DependentUpon>
     </Compile>
@@ -299,6 +317,13 @@
     </Compile>
     <Compile Include="orgdonate.aspx.vb">
       <DependentUpon>orgdonate.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="payment.aspx.designer.vb">
+      <DependentUpon>payment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="payment.aspx.vb">
+      <DependentUpon>payment.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="profile.aspx.designer.vb">
@@ -398,6 +423,13 @@
     <Compile Include="orgtoind.aspx.vb">
       <DependentUpon>orgtoind.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="vieworgrequest.aspx.designer.vb">
+      <DependentUpon>vieworgrequest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vieworgrequest.aspx.vb">
+      <DependentUpon>vieworgrequest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>

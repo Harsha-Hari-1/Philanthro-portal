@@ -4,17 +4,24 @@
         .auto-style1 {
             width: 250px;
         }
-         .main {
-            background-color:grey;
-            text-decoration:black;
-            width:75%;
+        .bg {
+            background-image:url("img/carousel-3.jpg")
+        }
+        .main {
+            background-color: skyblue;
+            text-decoration: black;
+            width: 70%;
+            flex-align: center;
+        }
 
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <div class="bg">
+    <center>
     <p>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Donation To Individuals</p>
-    <div class="main"><table style="width:100%;">
+    <div class="main"><table style="width:115%;">
             <tr>
                 <td class="auto-style1">
                     &nbsp;</td>
@@ -60,11 +67,12 @@
             </tr>
             <tr>
                 <td>
-                    <asp:Button ID="indpay" runat="server" Text="Pay" style="height: 29px" align="center" />
+                   <center> <asp:Button ID="indpay" runat="server" Text="Pay" style="height: 29px"  /></center>
                 </td>
                 <td>&nbsp;</td>
             </tr>
         </table>
     </div>
-        
+        </center>
+        </div>
 </asp:Content>

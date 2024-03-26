@@ -53,10 +53,16 @@
             text-decoration: none;
             color: #333;
         }
+        .backimg {
+            background-image:url("img/single.jpg");
+            width:100%;
+            height:100%;
+        }
     </style>
 </head>
 <body>
     <form id="form1" runat="server">
+        <div class="backimg">
       <div id="container">
             <div class="heading">Choose your donation</div>
         </div>
@@ -75,6 +81,7 @@
             </div>
           
         </div>
+            </div>
     </form>
 </body>
 </html>

@@ -8,7 +8,7 @@ Public Class dontoind
         txtind.Text = Session("selectedname")
     End Sub
 
-    Protected Sub Button1_Click(sender As Object, e As EventArgs) Handles indpay.Click
+    Protected Sub indpay_Click(sender As Object, e As EventArgs) Handles indpay.Click
 
         Dim instr As String
         instr = "Insert INTO dontoind(reg_id,amount,date,donate_by) Values(" + Session("selectedvalue").ToString + ",'" + dtiamt.Text + "','" + dtidate.Text + "'," + Session("user_id").ToString + ")"
@@ -16,7 +16,8 @@ Public Class dontoind
         Dim dataValue As String = Request.QueryString("dataKey")
         'Dim selectedData As String = Session("SelectedData")
         cmdo.ExecuteNonQuery()
-        Response.Write("<script>alert('Data saved');</script>")
+        Response.Write("<script>alert('Data Saved');</script>")
+        Response.Redirect("payment.aspx")
     End Sub
     'Public Sub type()
     '    Dim str As String

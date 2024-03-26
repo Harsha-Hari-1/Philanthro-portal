@@ -8,10 +8,11 @@ Public Class loginsam
     End Sub
 
     Protected Sub btnlog_Click(sender As Object, e As EventArgs) Handles btnlog.Click
+
         If rbdonar.Checked = True Then
             Dim str As String
-            str = "SELECT * FROM  donar WHERE Email = '" + etext.Text + "' AND Password = '" + utext.Text + "' "
-            Dim com As SqlCommand = New SqlCommand(str, co.connect)
+            str = "SELECT * FROM  donar WHERE email = '" + etext.Text + "' AND password = '" + utext.Text + "' "
+                Dim com As SqlCommand = New SqlCommand(str, co.connect())
             Dim sqldaC As SqlDataAdapter = New SqlDataAdapter(com)
             Dim ds As DataTable = New DataTable
             sqldaC.Fill(ds)
@@ -23,17 +24,19 @@ Public Class loginsam
                 Response.Write("<script>alert('Invalid Email or Password');</script>")
             End If
 
-            
         ElseIf rborg.Checked = True Then
             Dim str As String
-            str = "SELECT * FROM  organization WHERE Email = '" + etext.Text + "' AND Password = '" + utext.Text + "' "
-            Dim comm As SqlCommand = New SqlCommand(str, co.connect)
+            str = "SELECT * FROM  organization WHERE email = '" + etext.Text + "' AND password = '" + utext.Text + "' "
+                Dim comm As SqlCommand = New SqlCommand(str, co.connect())
             Dim sqlda As SqlDataAdapter = New SqlDataAdapter(comm)
             Dim dsp As DataTable = New DataTable
             sqlda.Fill(dsp)
             If dsp.Rows.Count > 0 Then
                 Dim orgid As String = dsp.Rows(0)(0).ToString()
                 Session("org_id") = orgid
+                Dim orgname As String = dsp.Rows(0)(0).ToString()
+                Session("org_name") = orgname
+
                 Response.Redirect("org2.aspx")
             Else
                 Response.Write("<script>alert('Invalid Email or Password');</script>")
@@ -41,8 +44,8 @@ Public Class loginsam
             End If
         ElseIf rbind.Checked = True Then
             Dim str As String
-            str = "SELECT * FROM  individuals WHERE Email = '" + etext.Text + "' AND Password = '" + utext.Text + "' "
-            Dim comm As SqlCommand = New SqlCommand(str, co.connect)
+            str = "SELECT * FROM  individuals WHERE email = '" + etext.Text + "' AND password = '" + utext.Text + "' "
+                Dim comm As SqlCommand = New SqlCommand(str, co.connect())
             Dim sqlda As SqlDataAdapter = New SqlDataAdapter(comm)
             Dim dsp As DataTable = New DataTable
             sqlda.Fill(dsp)
@@ -53,8 +56,9 @@ Public Class loginsam
             Else
                 Response.Write("<script>alert('Invalid Email or Password');</script>")
             End If
-           
-        End If
+
+            End If
+        
     End Sub
 
     Protected Sub lbsigup_Click(sender As Object, e As EventArgs) Handles lbsigup.Click
@@ -66,4 +70,6 @@ Public Class loginsam
             Response.Redirect("newind.aspx")
         End If
     End Sub
+
+
 End Class

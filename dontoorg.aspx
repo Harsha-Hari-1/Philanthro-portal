@@ -2,20 +2,25 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style type="text/css">
         .auto-style1 {
-            width: 225px;
+            width: 250px;
+        }
+        .bgm {
+            background-image:url("img/carousel-3.jpg");
         }
         .main {
-            background-color:aquamarine;
+            background-color:skyblue;
             text-decoration:black;
-            width:75%;
-
+            width:70%;
+            flex-align:center;
 
         }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <p>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Donation To Organization</p>
+    <div class="bgm">
+    <center>
+    <p color="black"><b>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Donation To Organization</b></p>
 
         <div class="main">
              <table style="width:100%;">
@@ -59,13 +64,13 @@
             <tr>
                 <td class="auto-style1">&nbsp;</td>
                 <td>
-                    <asp:Button ID="orgpay" runat="server" Text="Pay" />
+                   <asp:Button ID="orgpay" runat="server" Text="Pay" />
                 </td>
                 <td>&nbsp;</td>
             </tr>
         </table>
         </div>
        
-            
-   
+       </center>     
+   </div>
 </asp:Content>

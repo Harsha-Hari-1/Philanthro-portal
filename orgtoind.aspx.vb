@@ -16,6 +16,7 @@ Public Class WebForm1
         Dim dataValue As String = Request.QueryString("dataKey")
         cmdog.ExecuteNonQuery()
         Response.Write("<script>alert('Data Saved');</script>")
+        Response.Redirect("payment.aspx")
         
     End Sub
 End Class

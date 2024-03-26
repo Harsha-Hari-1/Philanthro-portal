@@ -1,32 +1,27 @@
-﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Site2.Master" CodeBehind="vieworg.aspx.vb" Inherits="PhilanthroPortal.vieworg" %>
+﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Site2.Master" CodeBehind="vieworgrequest.aspx.vb" Inherits="PhilanthroPortal.vieworgrequest" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-   
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-   
-        <asp:GridView ID="GVCV" runat="server" AllowPaging="True" CellPadding="4" ForeColor="#333333" GridLines="None" PageIndex="4" PageSize="5" AutoGenerateColumns="False" HorizontalAlign="Center" OnRowCommand="GVCV_RowCommand" DataKeyNames="org_id" SelectedIndex="0">
+    <asp:GridView ID="gvrequest" runat="server" AllowPaging="True" CellPadding="4" ForeColor="#333333" GridLines="None" PageIndex="4" PageSize="5" AutoGenerateColumns="False" HorizontalAlign="Center" OnRowCommand="gvrequest_RowCommand" DataKeyNames="org_id">
              <Columns>
-                 <asp:BoundField DataField="org_id" HeaderText="ID" />
+            <asp:BoundField DataField="org_id" HeaderText="ID" />
             <asp:BoundField DataField="org_name" HeaderText="Organization Name">
             <ItemStyle HorizontalAlign="Center" />
             </asp:BoundField>
-                 <asp:BoundField DataField="mission" HeaderText="Mission">
+                 <%--<asp:BoundField DataField="mission" HeaderText="Mission">
+            <ItemStyle HorizontalAlign="Center" />
+            </asp:BoundField>--%>
+            <asp:BoundField DataField="details" HeaderText="Donation For">
             <ItemStyle HorizontalAlign="Center" />
             </asp:BoundField>
-            <asp:BoundField DataField="address" HeaderText="Address">
+            <asp:BoundField DataField="amount" HeaderText="Amount">
             <ItemStyle HorizontalAlign="Center" />
             </asp:BoundField>
-            <asp:BoundField DataField="ngo_no" HeaderText="NGO No">
-            <ItemStyle HorizontalAlign="Center" />
-            </asp:BoundField>
-            
-            <asp:BoundField DataField="account" HeaderText="Account No">
-            <ItemStyle HorizontalAlign="Center" />
-            </asp:BoundField>
-                 <asp:BoundField DataField="phn_no" HeaderText="Contact No" />
-            <asp:ButtonField ButtonType="Button" Text="Donate" CommandName="Requests">
+                 <asp:ButtonField ButtonType="Button" Text="Donate" CommandName="Donate">
             <ItemStyle HorizontalAlign="Center" />
             </asp:ButtonField>
+            
+            
         </Columns>
         <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
         <EditRowStyle BackColor="#999999" />
@@ -41,6 +36,4 @@
         <SortedDescendingHeaderStyle BackColor="#6F8DAE" />
     </asp:GridView>
 
-   
-   
 </asp:Content>
