@@ -122,6 +122,8 @@
                 <br />
                 <br />
                 <a href="donar2.aspx">&nbsp;&nbsp;&nbsp;&nbsp;Profile</a>
+
+                <a href="viewfundinddon.aspx">&nbsp;&nbsp;&nbsp;&nbsp;Fund Analysis</a>
               
                 <a href="login.aspx">&nbsp;&nbsp;&nbsp;&nbsp;Logout</a>
             </div>

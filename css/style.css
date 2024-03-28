@@ -148,7 +148,7 @@ a:focus {
 /********** Top Bar CSS ***********/
 /**********************************/
 .top-bar {
-    position: absolute;
+    position:relative;
     height: 45px;
     width: 100%;
     top: 0;
@@ -286,11 +286,11 @@ a:focus {
 
 @media (min-width: 992px) {
     .navbar {
-        position: absolute;
+        position: relative;
         width: 100%;
         top: 45px;
         padding: 20px 60px;
-        background: transparent !important;
+        /*background: transparent !important;*/
         border-bottom: 1px solid rgba(255, 255, 255, .3);
         z-index: 9;
     }
@@ -2050,13 +2050,13 @@ a:focus {
     transition: .3s;
 }
 
-.footer .footer-link a::before {
+/*.footer .footer-link a::before {
     position: relative;
     content: "\f105";
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     margin-right: 10px;
-}
+}*/
 
 .footer .footer-link a:hover {
     color: #FDBE33;

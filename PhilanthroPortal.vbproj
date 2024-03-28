@@ -81,6 +81,7 @@
     <Import Include="System.Web.UI.HtmlControls" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="chartsample.aspx" />
     <Content Include="city.aspx" />
     <Content Include="css\style.css" />
     <Content Include="Dist.aspx" />
@@ -142,9 +143,15 @@
     <Content Include="profileind.aspx" />
     <Content Include="profileorg.aspx" />
     <Content Include="Register.aspx" />
+    <Content Include="resetpass.aspx" />
+    <Content Include="resetpassind.aspx" />
+    <Content Include="resetpassorg.aspx" />
     <Content Include="State.aspx" />
     <Content Include="Support.aspx" />
     <Content Include="type.aspx" />
+    <Content Include="viewfundinddon.aspx" />
+    <Content Include="viewfundorg.aspx" />
+    <Content Include="viewfundorgdon.aspx" />
     <Content Include="viewind.aspx" />
     <Content Include="vieworg.aspx" />
     <Content Include="vieworgrequest.aspx" />
@@ -152,6 +159,13 @@
     <Content Include="orgtoind.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="chartsample.aspx.designer.vb">
+      <DependentUpon>chartsample.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="chartsample.aspx.vb">
+      <DependentUpon>chartsample.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="city.aspx.designer.vb">
       <DependentUpon>city.aspx</DependentUpon>
     </Compile>
@@ -354,6 +368,27 @@
       <DependentUpon>Register.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
+    <Compile Include="resetpass.aspx.designer.vb">
+      <DependentUpon>resetpass.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="resetpass.aspx.vb">
+      <DependentUpon>resetpass.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="resetpassind.aspx.designer.vb">
+      <DependentUpon>resetpassind.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="resetpassind.aspx.vb">
+      <DependentUpon>resetpassind.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="resetpassorg.aspx.designer.vb">
+      <DependentUpon>resetpassorg.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="resetpassorg.aspx.vb">
+      <DependentUpon>resetpassorg.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="Site1.Master.designer.vb">
       <DependentUpon>Site1.Master</DependentUpon>
     </Compile>
@@ -401,6 +436,27 @@
     </Compile>
     <Compile Include="type.aspx.vb">
       <DependentUpon>type.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="viewfundinddon.aspx.designer.vb">
+      <DependentUpon>viewfundinddon.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="viewfundinddon.aspx.vb">
+      <DependentUpon>viewfundinddon.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="viewfundorg.aspx.designer.vb">
+      <DependentUpon>viewfundorg.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="viewfundorg.aspx.vb">
+      <DependentUpon>viewfundorg.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="viewfundorgdon.aspx.designer.vb">
+      <DependentUpon>viewfundorgdon.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="viewfundorgdon.aspx.vb">
+      <DependentUpon>viewfundorgdon.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="viewind.aspx.designer.vb">

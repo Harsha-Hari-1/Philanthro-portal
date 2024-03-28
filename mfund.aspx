@@ -4,6 +4,13 @@
         .auto-style1 {
             width: 189px;
         }
+        .auto-style2 {
+            width: 189px;
+            height: 32px;
+        }
+        .auto-style3 {
+            height: 32px;
+        }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -20,11 +27,11 @@
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td class="auto-style1">Date</td>
-                <td>
+                <td class="auto-style2">Date</td>
+                <td class="auto-style3">
                     <asp:TextBox ID="madate" runat="server"></asp:TextBox>
                 </td>
-                <td>&nbsp;</td>
+                <td class="auto-style3"></td>
             </tr>
             <tr>
                 <td class="auto-style1">&nbsp;</td>

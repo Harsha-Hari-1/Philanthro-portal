@@ -6,15 +6,7 @@ PhilanthroPortal
 </name>
 </assembly>
 <members>
-<member name="F:PhilanthroPortal.vieworgrequest.gvrequest">
-	<summary>
-gvrequest control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PhilanthroPortal.newpostind.form1">
+<member name="F:PhilanthroPortal.viewfundind.form1">
 	<summary>
 form1 control.
 </summary>
@@ -22,7 +14,15 @@ form1 control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:PhilanthroPortal.newpost.form1">
+</member><member name="F:PhilanthroPortal.viewfundind.gvfunddon">
+	<summary>
+gvfunddon control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.viewfund.form1">
 	<summary>
 form1 control.
 </summary>
@@ -30,57 +30,9 @@ form1 control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:PhilanthroPortal.newpost.post1">
+</member><member name="F:PhilanthroPortal.viewfund.gvfund">
 	<summary>
-post1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PhilanthroPortal.newpost.orgtxt">
-	<summary>
-orgtxt control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PhilanthroPortal.newpost.post2">
-	<summary>
-post2 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PhilanthroPortal.newpost.needtxt">
-	<summary>
-needtxt control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PhilanthroPortal.newpost.post3">
-	<summary>
-post3 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PhilanthroPortal.newpost.amttxt">
-	<summary>
-amttxt control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PhilanthroPortal.newpost.btnpost">
-	<summary>
-btnpost control.
+gvfund control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -206,9 +158,57 @@ gvind control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
+</member><member name="F:PhilanthroPortal.newpostind.form1">
+	<summary>
+form1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
 </member><member name="F:PhilanthroPortal.viewind.gd1">
 	<summary>
 gd1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.vieworgrequest.gvrequest">
+	<summary>
+gvrequest control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.resetpassind.form1">
+	<summary>
+form1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.resetpassind.txtEmail">
+	<summary>
+txtEmail control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.resetpassind.txtPassword">
+	<summary>
+txtPassword control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.resetpassind.btnSave">
+	<summary>
+btnSave control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -566,30 +566,6 @@ ContentPlaceHolder1 control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:PhilanthroPortal.donate.form1">
-	<summary>
-form1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PhilanthroPortal.donate.CustomerButton">
-	<summary>
-CustomerButton control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PhilanthroPortal.donate.ProviderButton">
-	<summary>
-ProviderButton control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
 </member><member name="F:PhilanthroPortal.dontoorg.txtorg">
 	<summary>
 txtorg control.
@@ -753,6 +729,38 @@ To modify move field declaration from designer file to code-behind file.
 </member><member name="F:PhilanthroPortal.profileorg.number">
 	<summary>
 number control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.resetpass.form1">
+	<summary>
+form1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.resetpass.txtEmail">
+	<summary>
+txtEmail control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.resetpass.txtPassword">
+	<summary>
+txtPassword control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.resetpass.btnSave">
+	<summary>
+btnSave control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -1654,6 +1662,70 @@ BtnORegister control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
+</member><member name="F:PhilanthroPortal.newpost.form1">
+	<summary>
+form1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.newpost.post1">
+	<summary>
+post1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.newpost.orgtxt">
+	<summary>
+orgtxt control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.newpost.post2">
+	<summary>
+post2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.newpost.needtxt">
+	<summary>
+needtxt control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.newpost.post3">
+	<summary>
+post3 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.newpost.amttxt">
+	<summary>
+amttxt control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.newpost.btnpost">
+	<summary>
+btnpost control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
 </member><member name="F:PhilanthroPortal.profileind.Head1">
 	<summary>
 Head1 control.
@@ -1774,6 +1846,38 @@ indpay control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
+</member><member name="F:PhilanthroPortal.resetpassorg.form1">
+	<summary>
+form1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.resetpassorg.txtEmail">
+	<summary>
+txtEmail control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.resetpassorg.txtPassword">
+	<summary>
+txtPassword control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PhilanthroPortal.resetpassorg.btnSave">
+	<summary>
+btnSave control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
 </member><member name="F:PhilanthroPortal.type.txttype">
 	<summary>
 txttype control.
@@ -1841,14 +1945,6 @@ To modify move field declaration from designer file to code-behind file.
 </member><member name="F:PhilanthroPortal.forgotpass.TextBox3">
 	<summary>
 TextBox3 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PhilanthroPortal.forgotpass.TextBox4">
-	<summary>
-TextBox4 control.
 </summary>
 	<remarks>
 Auto-generated field.

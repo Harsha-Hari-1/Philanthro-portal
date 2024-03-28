@@ -11,7 +11,7 @@ Public Class dontoind
     Protected Sub indpay_Click(sender As Object, e As EventArgs) Handles indpay.Click
 
         Dim instr As String
-        instr = "Insert INTO dontoind(reg_id,amount,date,donate_by) Values(" + Session("selectedvalue").ToString + ",'" + dtiamt.Text + "','" + dtidate.Text + "'," + Session("user_id").ToString + ")"
+        instr = "Insert INTO dontoind(reg_id,reg_name,amount,date,donate_by) Values(" + Session("selectedvalue").ToString + ",'" + Session("selectedname").ToString() + "','" + dtiamt.Text + "','" + dtidate.Text + "'," + Session("user_id").ToString + ")"
         Dim cmdo As SqlCommand = New SqlCommand(instr, con.connect())
         Dim dataValue As String = Request.QueryString("dataKey")
         'Dim selectedData As String = Session("SelectedData")

@@ -6,18 +6,18 @@ Public Class vieworgrequest
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
         If Not Me.IsPostBack Then
             Dim query As String
-            Dim userid As String = Session("user_id").ToString()
-            query = " SELECT * FROM organization WHERE org_id = " + userid
+            Dim userid As String = Session("selectedvalueorg").ToString()
+            query = " Select organization.org_id,organization.org_name,org_post.post_id,org_post.org_id,org_post.org_name,org_post.details,org_post.amount from organization  JOIN org_post on organization.org_id=org_post.org_id WHERE org_post.org_id =  " + userid
             Dim com As SqlCommand = New SqlCommand(query, co.connect)
             Dim sqldaC As SqlDataAdapter = New SqlDataAdapter(com)
-            Dim ds As DataTable = New DataTable
-            sqldaC.Fill(ds)
             Dim ap As DataTable = New DataTable
-            Dim str As String
-            str = "select org_id,org_name,details,amount from org_post"
-            Dim cmd As SqlCommand = New SqlCommand(str, co.connect())
-            Dim ad As SqlDataAdapter = New SqlDataAdapter(cmd)
-            ad.Fill(ap)
+            sqldaC.Fill(ap)
+            'Dim ap As DataTable = New DataTable
+            'Dim str As String
+            'str = "select org_id,org_name,details,amount from org_post"
+            'Dim cmd As SqlCommand = New SqlCommand(str, co.connect())
+            'Dim ad As SqlDataAdapter = New SqlDataAdapter(cmd)
+            'ad.Fill(ap)
             gvrequest.DataSource = ap
             gvrequest.DataBind()
         End If

@@ -72,4 +72,13 @@ Public Class loginsam
     End Sub
 
 
+    Protected Sub lbfor_Click(sender As Object, e As EventArgs) Handles lbfor.Click
+        If rbdonar.Checked = True Then
+            Response.Redirect("resetpass.aspx")
+        ElseIf rborg.Checked = True Then
+            Response.Redirect("resetpassorg.aspx")
+        ElseIf rbind.Checked = True Then
+            Response.Redirect("resetpassind.aspx")
+        End If
+    End Sub
 End Class

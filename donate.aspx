@@ -1,9 +1,8 @@
 ﻿<%@ Page Language="vb" AutoEventWireup="false" CodeBehind="donate.aspx.vb" Inherits="PhilanthroPortal.donate" %>
 
 <!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
+<html>
+<head>
     <title>donate selection</title>
     <style>
         .heading {
@@ -13,7 +12,7 @@
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
         }
         body {
-            background-image:url(donate.jpg);
+            background-image: url(donate.jpg);
         }
         .card-container {
             display: flex;
@@ -53,35 +52,36 @@
             text-decoration: none;
             color: #333;
         }
-        .backimg {
-            background-image:url("img/single.jpg");
-            width:100%;
-            height:100%;
-        }
+       .backimg {
+    background-image: url("img/single.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100vw; 
+    height: 100vh; 
+}
+
     </style>
 </head>
 <body>
-    <form id="form1" runat="server">
-        <div class="backimg">
-      <div id="container">
+    <div class="backimg">
+        <div id="container">
             <div class="heading">Choose your donation</div>
         </div>
         <div class="card-container">
             <div class="card">
-                <asp:LinkButton ID="CustomerButton" runat="server" OnClick="CustomerButton_Click">
+                <a href="vieworg.aspx">
                     <img src="https://www.shutterstock.com/image-photo/top-view-diverse-young-volunteers-260nw-1821196490.jpg" alt="Customer" />
                     <h3><center>Donation to Organization</center></h3>
-                </asp:LinkButton>
+                </a>
             </div>
             <div class="card">
-                <asp:LinkButton ID="ProviderButton" runat="server" OnClick="ProviderButton_Click">
+                <a href="viewind.aspx">
                     <img src="https://www.sitaramjindalfoundation.org/blog/wp-content/uploads/2019/04/Charitiy-299x174.png" alt="Provider" />
                     <h3><center>Donation to Individual</center></h3>
-                </asp:LinkButton>
+                </a>
             </div>
-          
         </div>
-            </div>
-    </form>
+    </div>
 </body>
 </html>

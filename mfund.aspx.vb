@@ -12,10 +12,10 @@ Public Class mfund
 
     Protected Sub Button1_Click(sender As Object, e As EventArgs) Handles Btncompute.Click
         Dim instr As String
-        instr = "Insert INTO monthanalysis(org_id,date) Values(" + ddlmfund.SelectedValue + ",'" + madate.Text + "')"
+        instr = "Select orgatoind.donated_by,organization.org_id from orgatoind JOIN organization ON organization.org_id=orgatoind.donated_by WHERE organization.org_id = ' " + ddlmfund.SelectedValue + " '"
         Dim cmdo As SqlCommand = New SqlCommand(instr, con.connect())
         cmdo.ExecuteNonQuery()
-        Response.Write("<script>alert('data saved');</script>")
+        Response.Redirect("viewfund.aspx")
     End Sub
     Public Sub morg()
         Dim str As String

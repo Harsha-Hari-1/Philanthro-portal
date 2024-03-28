@@ -11,32 +11,41 @@ Option Strict On
 Option Explicit On
 
 
-Partial Public Class forgotpass
+Partial Public Class resetpass
 
     '''<summary>
-    '''TextBox2 control.
+    '''form1 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents TextBox2 As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents form1 As Global.System.Web.UI.HtmlControls.HtmlForm
 
     '''<summary>
-    '''TextBox3 control.
+    '''txtEmail control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents TextBox3 As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents txtEmail As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Button1 control.
+    '''txtPassword control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Button1 As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents txtPassword As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''btnSave control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents btnSave As Global.System.Web.UI.WebControls.Button
 End Class

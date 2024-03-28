@@ -7,7 +7,7 @@ Public Class vieworg
         If Not Me.IsPostBack Then
             Dim query As String
             Dim userid As String = Session("user_id").ToString()
-            query = " SELECT * FROM organization WHERE org_id = " + userid
+            query = " SELECT * FROM organization  "
             Dim com As SqlCommand = New SqlCommand(query, co.connect)
             Dim sqldaC As SqlDataAdapter = New SqlDataAdapter(com)
             Dim ds As DataTable = New DataTable
@@ -19,7 +19,7 @@ Public Class vieworg
             Dim cmd As SqlCommand = New SqlCommand(str, co.connect())
             Dim ad As SqlDataAdapter = New SqlDataAdapter(cmd)
             ad.Fill(ap)
-            GVCV.DataSource = ap
+            GVCV.DataSource = ds
             GVCV.DataBind()
         End If
     End Sub
@@ -32,16 +32,12 @@ Public Class vieworg
     
     Protected Sub GVCV_RowCommand(ByVal sender As Object, ByVal e As GridViewCommandEventArgs) Handles GVCV.RowCommand
 
-        'If Session("selectedvalue") == org_id Then
-
-        'End If
-
         If e.CommandName = "Requests" Then
             Dim rowIndex As Integer = Convert.ToInt32(e.CommandArgument)
             Dim id As Integer = Convert.ToInt64(GVCV.DataKeys(rowIndex).Value)
             Dim name As String = GVCV.Rows(rowIndex).Cells(1).Text
             Dim ngo As String = GVCV.Rows(rowIndex).Cells(4).Text
-            Session("selectedvalue") = id
+            Session("selectedvalueorg") = id
             Session("selectedname") = name
             Response.Redirect("vieworgrequest.aspx")
         End If
