@@ -106,7 +106,7 @@ p {
                 <div class="row gx-3">
                     <div class="col-12">
                         <div class="d-flex flex-column">
-                            <p class="text mb-1">Person Name</p>
+                            <p class="text mb-1">Account Holder Name</p>
                             <asp:TextBox ID="txtPersonName" CssClass="form-control mb-3" runat="server" placeholder="Name"></asp:TextBox>
                         </div>
                     </div>

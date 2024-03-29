@@ -6,6 +6,8 @@
         }
         .bgm {
             background-image:url("img/carousel-3.jpg");
+            width:auto;
+            height:auto;
         }
         .main {
             background-color:skyblue;

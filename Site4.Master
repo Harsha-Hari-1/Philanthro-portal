@@ -45,10 +45,10 @@
                         <a href="#" class="nav-item nav-link">About</a>
                         <a href="#" class="nav-item nav-link">Causes</a>
                         
-                         <div class="nav-item dropdown">
+                         <%--<div class="nav-item dropdown">
                             <a href="fund.aspx" class="nav-link dropdown-toggle" data-toggle="dropdown">Fund Analysis</a>
                             
-                        </div>
+                        </div>--%>
                         <a href="contact.html" class="nav-item nav-link">Contact</a>
                         <a href="profileind.aspx" class="nav-item nav-link">Profile</a>
                     </div>

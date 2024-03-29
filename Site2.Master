@@ -44,7 +44,6 @@
                     <div class="navbar-nav ml-auto">
                         <a href="#" class="nav-item nav-link active">Home</a>
                         <a href="#" class="nav-item nav-link">About</a>
-                        <a href="#" class="nav-item nav-link">Causes</a>
                         
                          
                             <a href="donate.aspx" class="nav-item nav-link" >Donate</a>

@@ -45,6 +45,7 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.DataVisualization" />
     <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Web.DynamicData" />
@@ -81,7 +82,9 @@
     <Import Include="System.Web.UI.HtmlControls" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="chartorg.aspx" />
     <Content Include="chartsample.aspx" />
+    <Content Include="chartsample1.aspx" />
     <Content Include="city.aspx" />
     <Content Include="css\style.css" />
     <Content Include="Dist.aspx" />
@@ -126,6 +129,8 @@
     <Content Include="img\user.jpg" />
     <Content Include="img\volunteer.jpg" />
     <Content Include="ind2.aspx" />
+    <Content Include="indfromdonar.aspx" />
+    <Content Include="indfromorg.aspx" />
     <Content Include="individuals.aspx" />
     <Content Include="js\main.js" />
     <Content Include="login.aspx" />
@@ -135,9 +140,11 @@
     <Content Include="neworga.aspx" />
     <Content Include="newpostind.aspx" />
     <Content Include="newpostorg.aspx" />
+    <Content Include="notif.aspx" />
     <Content Include="org2.aspx" />
     <Content Include="organization.aspx" />
     <Content Include="orgdonate.aspx" />
+    <Content Include="orgfromdonar.aspx" />
     <Content Include="payment.aspx" />
     <Content Include="profile.aspx" />
     <Content Include="profileind.aspx" />
@@ -149,21 +156,39 @@
     <Content Include="State.aspx" />
     <Content Include="Support.aspx" />
     <Content Include="type.aspx" />
+    <Content Include="viewfunddonind.aspx" />
     <Content Include="viewfundinddon.aspx" />
     <Content Include="viewfundorg.aspx" />
     <Content Include="viewfundorgdon.aspx" />
+    <Content Include="viewfundorgind.aspx" />
     <Content Include="viewind.aspx" />
     <Content Include="vieworg.aspx" />
     <Content Include="vieworgrequest.aspx" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="orgtoind.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="chartorg.aspx.designer.vb">
+      <DependentUpon>chartorg.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="chartorg.aspx.vb">
+      <DependentUpon>chartorg.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="chartsample.aspx.designer.vb">
       <DependentUpon>chartsample.aspx</DependentUpon>
     </Compile>
     <Compile Include="chartsample.aspx.vb">
       <DependentUpon>chartsample.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="chartsample1.aspx.designer.vb">
+      <DependentUpon>chartsample1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="chartsample1.aspx.vb">
+      <DependentUpon>chartsample1.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="city.aspx.designer.vb">
@@ -235,6 +260,20 @@
     </Compile>
     <Compile Include="ind2.aspx.vb">
       <DependentUpon>ind2.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="indfromdonar.aspx.designer.vb">
+      <DependentUpon>indfromdonar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="indfromdonar.aspx.vb">
+      <DependentUpon>indfromdonar.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="indfromorg.aspx.designer.vb">
+      <DependentUpon>indfromorg.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="indfromorg.aspx.vb">
+      <DependentUpon>indfromorg.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="individuals.aspx.designer.vb">
@@ -312,6 +351,13 @@
       <DependentUpon>newpostorg.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
+    <Compile Include="notif.aspx.designer.vb">
+      <DependentUpon>notif.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="notif.aspx.vb">
+      <DependentUpon>notif.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="org2.aspx.designer.vb">
       <DependentUpon>org2.aspx</DependentUpon>
     </Compile>
@@ -331,6 +377,13 @@
     </Compile>
     <Compile Include="orgdonate.aspx.vb">
       <DependentUpon>orgdonate.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="orgfromdonar.aspx.designer.vb">
+      <DependentUpon>orgfromdonar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="orgfromdonar.aspx.vb">
+      <DependentUpon>orgfromdonar.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="payment.aspx.designer.vb">
@@ -438,6 +491,13 @@
       <DependentUpon>type.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
+    <Compile Include="viewfunddonind.aspx.designer.vb">
+      <DependentUpon>viewfunddonind.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="viewfunddonind.aspx.vb">
+      <DependentUpon>viewfunddonind.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="viewfundinddon.aspx.designer.vb">
       <DependentUpon>viewfundinddon.aspx</DependentUpon>
     </Compile>
@@ -457,6 +517,13 @@
     </Compile>
     <Compile Include="viewfundorgdon.aspx.vb">
       <DependentUpon>viewfundorgdon.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="viewfundorgind.aspx.designer.vb">
+      <DependentUpon>viewfundorgind.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="viewfundorgind.aspx.vb">
+      <DependentUpon>viewfundorgind.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="viewind.aspx.designer.vb">

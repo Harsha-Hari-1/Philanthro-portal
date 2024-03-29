@@ -11,12 +11,15 @@
         }
         .bgimg {
             background-image:url("img/carousel-2.jpg");
+            width:auto;
+            height:auto;
         }
 
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="bgimg">
+        <center>
     <p>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Donation To Individuals</p>
     <div class="main"><table style="width:100%;">
@@ -71,5 +74,6 @@
             </tr>
         </table>
     </div>
+            </center>
     </div>
         </asp:Content>

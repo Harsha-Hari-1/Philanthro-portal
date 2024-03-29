@@ -20,7 +20,7 @@
 
         .sidebar {
             background-color: #333;
-            width: 250px;
+            width: 300px;
             padding-top: 20px;
             transition: width 0.3s ease; 
         }
@@ -122,6 +122,9 @@
                 <br />
                 <br />
                 <a href="ind2.aspx">&nbsp;&nbsp;&nbsp;&nbsp;Profile</a>
+                 <a href="indfromdonar.aspx">&nbsp;&nbsp;&nbsp;&nbsp;Fund Received from donar</a>
+                 <a href="indfromorg.aspx">&nbsp;&nbsp;&nbsp;&nbsp;Fund Received from organization</a>
+
               
                 <a href="login.aspx">&nbsp;&nbsp;&nbsp;&nbsp;Logout</a>
             </div>

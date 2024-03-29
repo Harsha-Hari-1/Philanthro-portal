@@ -15,7 +15,7 @@ Public Class dontoorg
 
     Protected Sub orgpay_Click(sender As Object, e As EventArgs) Handles orgpay.Click
         Dim instr As String
-        instr = "Insert INTO dontoorg(org_id,amount,date,don_by) Values(" + Session("selectedvalue").ToString + ",'" + dtoamt.Text + "','" + dtodate.Text + "'," + Session("user_id").ToString + ")"
+        instr = "Insert INTO dontoorg(org_id,org_name,amount,date,don_by) Values(" + Session("selectedvalue").ToString + ",'" + Session("selectedname").ToString() + "','" + dtoamt.Text + "','" + dtodate.Text + "'," + Session("user_id").ToString + ")"
         Dim cmdo As SqlCommand = New SqlCommand(instr, con.connect())
 
         cmdo.ExecuteNonQuery()

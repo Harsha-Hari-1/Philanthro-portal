@@ -34,4 +34,13 @@ Public Class profileind
         End If
     End Sub
 
+    'Protected Sub DropDownList1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles DropDownList1.SelectedIndexChanged
+    '    Dim selectedValue As String = DropDownList1.SelectedValue
+    '    Select Case selectedValue
+    '        Case "1"
+    '            Response.Redirect("indfromdonar.aspx")
+    '        Case "2"
+    '            Response.Redirect("indfromorg.aspx")
+    '    End Select
+    'End Sub
 End Class

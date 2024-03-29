@@ -11,7 +11,7 @@ Option Strict On
 Option Explicit On
 
 
-Partial Public Class chartsample
+Partial Public Class chartsample1
 
     '''<summary>
     '''form1 control.
