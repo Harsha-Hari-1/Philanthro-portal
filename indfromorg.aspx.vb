@@ -12,8 +12,6 @@ Public Class indfromorg
             Dim sqldaC As SqlDataAdapter = New SqlDataAdapter(comn)
             Dim ds As DataTable = New DataTable
             sqldaC.Fill(ds)
-            'Dim ad As SqlDataAdapter = New SqlDataAdapter(cmd)
-            'ad.Fill(ds)
             orgind.DataSource = ds
             orgind.DataBind()
         End If

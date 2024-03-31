@@ -176,6 +176,24 @@ Partial Public Class newind
     Protected WithEvents ipan As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
+    '''Panel7 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents Panel7 As Global.System.Web.UI.WebControls.Panel
+
+    '''<summary>
+    '''iamt control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents iamt As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
     '''Panel4 control.
     '''</summary>
     '''<remarks>

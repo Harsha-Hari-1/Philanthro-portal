@@ -25,11 +25,7 @@ Public Class vieworg
     End Sub
     Protected Sub GVCV_PageIndexChanging(sender As Object, e As GridViewPageEventArgs) Handles GVCV.PageIndexChanging
         GVCV.PageIndex = e.NewPageIndex
-        'Me.BindGrid()
     End Sub
-
-    
-    
     Protected Sub GVCV_RowCommand(ByVal sender As Object, ByVal e As GridViewCommandEventArgs) Handles GVCV.RowCommand
 
         If e.CommandName = "Requests" Then

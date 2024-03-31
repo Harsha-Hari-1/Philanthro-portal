@@ -23,7 +23,7 @@ Public Class newind
     Protected Sub BtnIRegister_Click(sender As Object, e As EventArgs) Handles BtnIRegister.Click
         Dim instr As String
 
-        instr = "Insert INTO [individuals](iname,address,pincode,state_id,dis_id,city_id,phn,pan_no,conttent,account,email,password) Values('" + ilname.Text + "','" + iaddress.Text + "'," + ipin.Text + " ," + ddst.SelectedValue + "," + ddds.SelectedValue + "," + ddci.SelectedValue + ",'" + iphone.Text + "','" + ipan.Text + "','" + icond.Text + "','" + iacc.Text + "','" + iemail.Text + "','" + ipass.Text + "');SELECT SCOPE_IDENTITY()"
+        instr = "Insert INTO [individuals](iname,address,pincode,state_id,dis_id,city_id,phn,pan_no,conttent,account,,amount,email,password) Values('" + ilname.Text + "','" + iaddress.Text + "'," + ipin.Text + " ," + ddst.SelectedValue + "," + ddds.SelectedValue + "," + ddci.SelectedValue + ",'" + iphone.Text + "','" + ipan.Text + "','" + icond.Text + "','" + iacc.Text + "','" + iemail.Text + "','" + ipass.Text + "');SELECT SCOPE_IDENTITY()"
         Dim cmddon As SqlCommand = New SqlCommand(instr, con.connect())
         Dim currentID As Integer = cmddon.ExecuteScalar()
         If UploadImages.HasFiles Then
@@ -45,7 +45,7 @@ Public Class newind
         iphone.Text = ""
         ipan.Text = ""
         icond.Text = ""
-
+        iamt.text = ""
         iacc.Text = ""
         iemail.Text = ""
         ipass.Text = ""

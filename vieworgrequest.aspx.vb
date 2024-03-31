@@ -12,26 +12,13 @@ Public Class vieworgrequest
             Dim sqldaC As SqlDataAdapter = New SqlDataAdapter(com)
             Dim ap As DataTable = New DataTable
             sqldaC.Fill(ap)
-            'Dim ap As DataTable = New DataTable
-            'Dim str As String
-            'str = "select org_id,org_name,details,amount from org_post"
-            'Dim cmd As SqlCommand = New SqlCommand(str, co.connect())
-            'Dim ad As SqlDataAdapter = New SqlDataAdapter(cmd)
-            'ad.Fill(ap)
             gvrequest.DataSource = ap
             gvrequest.DataBind()
         End If
-
     End Sub
-
-    Protected Sub gvrequest_SelectedIndexChanged(sender As Object, e As EventArgs) Handles gvrequest.SelectedIndexChanged
-
-    End Sub
-
     Protected Sub gvrequest_PageIndexChanging(sender As Object, e As GridViewPageEventArgs) Handles gvrequest.PageIndexChanging
         gvrequest.PageIndex = e.NewPageIndex
     End Sub
-
     Protected Sub gvrequest_RowCommand(sender As Object, e As GridViewCommandEventArgs) Handles gvrequest.RowCommand
         If e.CommandName = "Donate" Then
             Dim rowIndex As Integer = Convert.ToInt32(e.CommandArgument)

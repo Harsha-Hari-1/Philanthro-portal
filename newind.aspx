@@ -443,6 +443,10 @@
                                 <asp:TextBox runat="server" ID="ipan" placeholder="Pan Number" CssClass="form-item" />
                                 <small class="errorReq"><i class="fa fa-asterisk" aria-hidden="true"></i> required field</small>
                             </asp:Panel>
+                          <asp:Panel ID="Panel7" runat="server" CssClass="form-item">
+                                <asp:TextBox runat="server" ID="iamt" placeholder="Amount" CssClass="form-item" />
+                                <small class="errorReq"><i class="fa fa-asterisk" aria-hidden="true"></i> required field</small>
+                            </asp:Panel>
                            <asp:Panel ID="Panel4" runat="server" CssClass="form-item">
                                 <asp:TextBox runat="server" ID="icond" placeholder="Condition" CssClass="form-item" />
                                 <small class="errorReq"><i class="fa fa-asterisk" aria-hidden="true"></i> required field</small>

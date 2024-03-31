@@ -5,7 +5,7 @@ Public Class payment
     Inherits System.Web.UI.Page
     Dim con As philanthro = New philanthro
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
-
+        
     End Sub
 
     Protected Sub btnPay_Click(sender As Object, e As EventArgs) Handles btnPay.Click
@@ -26,7 +26,7 @@ Public Class payment
             Response.Write("<script>alert('Payment failed. Please try again.');</script>")
             'lblResult.Text = "Payment failed. Please try again."
         End If
-        'Response.Redirect("donar2.aspx")
+        Response.Redirect("donar2.aspx")
     End Sub
     Function ValidateCreditCardNumber(ByVal cardNumber As String) As Boolean
         If String.IsNullOrWhiteSpace(cardNumber) Then

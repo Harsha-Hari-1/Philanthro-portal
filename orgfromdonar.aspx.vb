@@ -12,8 +12,6 @@ Public Class orgfromdonar
             Dim sqldaC As SqlDataAdapter = New SqlDataAdapter(comn)
             Dim ds As DataTable = New DataTable
             sqldaC.Fill(ds)
-            'Dim ad As SqlDataAdapter = New SqlDataAdapter(cmd)
-            'ad.Fill(ds)
             Chart1.DataSource = ds
             Chart1.DataBind()
         End If

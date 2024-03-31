@@ -93,6 +93,7 @@
     <Content Include="donate.aspx" />
     <Content Include="dontoind.aspx" />
     <Content Include="dontoorg.aspx" />
+    <Content Include="email.aspx" />
     <Content Include="forgotpass.aspx" />
     <Content Include="fund.aspx" />
     <Content Include="img\about.jpg" />
@@ -241,6 +242,13 @@
       <DependentUpon>dontoorg.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
+    <Compile Include="email.aspx.designer.vb">
+      <DependentUpon>email.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="email.aspx.vb">
+      <DependentUpon>email.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="forgotpass.aspx.designer.vb">
       <DependentUpon>forgotpass.aspx</DependentUpon>
     </Compile>
@@ -384,7 +392,7 @@
     </Compile>
     <Compile Include="orgfromdonar.aspx.vb">
       <DependentUpon>orgfromdonar.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="payment.aspx.designer.vb">
       <DependentUpon>payment.aspx</DependentUpon>

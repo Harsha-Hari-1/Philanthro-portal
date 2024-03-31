@@ -8,15 +8,17 @@
     <style type="text/css">
         .auto-style1 {
             width: 1089px;
+            background-color:black;
         }
-        .card-col-12 {
+        .card-col-6 {
+            aligin:center;
             margin: 20px;
             padding: 20px;
             border-radius: 15px;
             transition: transform 0.3s ease;
-            width: 80%; /* Adjust card width */
-            height: 350px; /* Adjust card height */
-            background: white;
+            width: 50%; /* Adjust card width */
+            height: 200px; /* Adjust card height */
+            background:black ;
             border: 1px solid #ccc;
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
             flex-direction: column;
@@ -30,13 +32,13 @@
 </head>
 <body>
     <form id="form1" runat="server">
-    <div class="card-col-12">
+    <div class="card-col-6">
     
         
         <table style="width:100%;">
             <tr>
                 <td class="auto-style2">
-                    <asp:Label ID="post1" runat="server" Text="Organizatation Name"></asp:Label>
+                    <asp:Label ID="post1" runat="server" style="color:white;" Text="Organizatation Name"></asp:Label>
                 </td>
                 <td class="auto-style1">
                     <asp:TextBox ID="orgtxt" runat="server" style="margin-left: 0px" Enabled="False"></asp:TextBox>
@@ -44,7 +46,7 @@
             </tr>
             <tr>
                 <td class="auto-style2">
-                    <asp:Label ID="post2" runat="server" Text="Need donation for "></asp:Label>
+                    <asp:Label ID="post2" runat="server" style="color:white;" Text="Need donation for "></asp:Label>
                 </td>
                 <td class="auto-style1">
                     <asp:TextBox ID="needtxt" runat="server" style="margin-left: 0px"></asp:TextBox>
@@ -52,7 +54,7 @@
             </tr>
             <tr>
                 <td class="auto-style2">
-                    <asp:Label ID="post3" runat="server" Text="Amount Needed "></asp:Label>
+                    <asp:Label ID="post3" runat="server" style="color:white;" Text="Amount Needed "></asp:Label>
                 </td>
                 <td class="auto-style1">
                     <asp:TextBox ID="amttxt" runat="server" style="margin-left: 0px"></asp:TextBox>

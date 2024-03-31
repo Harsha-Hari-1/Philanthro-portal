@@ -4,7 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head id="Head1" runat="server">
-    <title>Profile</title>
+    <title>Philanthro Portal</title>
       <style>
         body {
             font-family: Arial, sans-serif;

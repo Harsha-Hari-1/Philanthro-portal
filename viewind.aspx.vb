@@ -12,9 +12,6 @@ Public Class viewind
             Dim sqldaC As SqlDataAdapter = New SqlDataAdapter(com)
             Dim ds As DataTable = New DataTable
             sqldaC.Fill(ds)
-            
-            'Dim selectedvalue As String
-            'Session("SelectedData") = selectedvalue
             Dim ap As DataTable = New DataTable
             Dim str As String
             str = "select reg_id,iname,address,pan_no,phn,account,conttent from individuals"
@@ -29,12 +26,6 @@ Public Class viewind
     Protected Sub gd1_PageIndexChanging(sender As Object, e As GridViewPageEventArgs) Handles gd1.PageIndexChanging
         gd1.PageIndex = e.NewPageIndex
     End Sub
-
-
-    Protected Sub gd1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles gd1.SelectedIndexChanged
-
-    End Sub
-
     Protected Sub gd1_RowCommand(sender As Object, e As GridViewCommandEventArgs) Handles gd1.RowCommand
         If e.CommandName = "DontoInd" Then
             Dim rowIndex As Integer = Convert.ToInt32(e.CommandArgument)
@@ -44,29 +35,6 @@ Public Class viewind
             Session("selectedvalue") = id
             Session("selectedname") = name
             Response.Redirect("dontoind.aspx")
-            'Session("selectedvalue") = name
-
         End If
-        'If e.CommandName = "Select" Then
-        '    Dim index As Integer = Convert.ToInt32(e.CommandArgument)
-        '    Dim selectedData As String = gd1.Rows(index).Cells(0).Text ' Assuming the data is in the first column
-        '    Session("SelectedData") = selectedData
-        '    Response.Redirect("Form2.aspx") ' Redirect to Form2
-        'End If
     End Sub
-
-    'Shared Function aspx() As Object
-    '    Throw New NotImplementedException
-    'End Function
-
-    'Shared Function SelectedRow() As Object
-    '    Throw New NotImplementedException
-    'End Function
-
-    'Shared Function SelectedRow() As Object
-    '    Throw New NotImplementedException
-    'End Function
-
-
-
 End Class

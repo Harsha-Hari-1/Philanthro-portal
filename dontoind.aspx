@@ -5,7 +5,9 @@
             width: 250px;
         }
         .bg {
-            background-image:url("img/carousel-3.jpg")
+            background-image:url("img/carousel-3.jpg");
+            width:auto;
+            height:700px;
         }
         .main {
             background-color: skyblue;
