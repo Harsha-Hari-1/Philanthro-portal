@@ -19,10 +19,6 @@ User-Friendly Interface: Visually appealing and intuitive design for effortless 
 
 Transparency and Impact: Charitable organizations can showcase their impact with reporting features for donors to track and measure the impact of donations.
 
-Funding for New Technology (Bootstrapping): Allocates funds for continuous improvement and adoption of new technologies.
-
-Administrator's Share: Administrators have access to a dedicated share from bootstrapping campaigns.
-
 Technologies Used:
 
 HTML
